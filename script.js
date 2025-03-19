@@ -98,9 +98,20 @@ function loadQuizQuestion() {
     quiz.options.forEach((option, index) => {
         const btn = document.createElement("button");
         btn.classList.add("quiz-btn");
-        btn.textContent = option;
         btn.dataset.index = index;
         btn.onclick = () => selectAnswer(index, btn);
+
+        // Check if option is an object (with text and image) or just text
+        if (typeof option === "object" && option.text && option.image) {
+            const img = document.createElement("img");
+            img.src = option.image;
+            img.alt = option.text;
+            btn.appendChild(img);
+            btn.appendChild(document.createTextNode(option.text));
+        } else {
+            btn.textContent = option; // Fallback for text-only options
+        }
+
         optionsDiv.appendChild(btn);
     });
 
@@ -108,7 +119,10 @@ function loadQuizQuestion() {
     document.getElementById("next-question").disabled = false; // Always enabled
 
     if (ttsEnabled) {
-        let optionsText = quiz.options.map((option, index) => `Option ${String.fromCharCode(65 + index)}: ${option}`).join('. ');
+        let optionsText = quiz.options.map((option, index) => {
+            const text = typeof option === "object" ? option.text : option;
+            return `Option ${String.fromCharCode(65 + index)}: ${text}`;
+        }).join('. ');
         let fullText = `The question is: ${quiz.question}. ${optionsText}`;
         speak(fullText);
     }
@@ -132,7 +146,8 @@ function selectAnswer(index, button) {
     feedback.classList.remove("hidden");
 
     if (ttsEnabled) {
-        speak(button.textContent); // Speak selected answer
+        const optionText = typeof quiz.options[index] === "object" ? quiz.options[index].text : quiz.options[index];
+        speak(optionText); // Speak selected answer
         speak(feedback.textContent); // Speak feedback message
         if (index === quiz.answer && quiz.explanation) {
             speak(quiz.explanation); // Speak explanation if correct

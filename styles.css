@@ -31,10 +31,23 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    min-height: 100px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .quiz-btn:hover {
     background-color: #3399ff;
+    transform: scale(1.05); /* Slight scale-up animation on hover */
+}
+
+.quiz-btn img {
+    max-width: 100px;
+    max-height: 80px;
+    margin: 5px;
 }
 
 #feedback {
@@ -73,4 +86,9 @@ body {
 
 #belt-dropdown:hover {
     background-color: #ff9900;
+}
+
+#quiz-image {
+    max-width: 300px;
+    margin: 10px auto;
 }

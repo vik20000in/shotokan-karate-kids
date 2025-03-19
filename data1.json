@@ -1,0 +1,134 @@
+{
+    "white": {
+      "quizzes": [
+        {
+          "question": "What does 'karate' mean?",
+          "options": ["Empty Hand", "Full Fist", "Strong Kick"],
+          "answer": 0,
+          "explanation": "Karate means 'Empty Hand' in Japanese."
+        },
+        {
+          "question": "What stance is this?",
+          "image": "images/white/stance1.jpg",
+          "options": [
+            {"text": "Zenkutsu-dachi", "image": "images/white/option1.jpg"},
+            {"text": "Kiba-dachi", "image": "images/white/option2.jpg"},
+            {"text": "Kokutsu-dachi", "image": "images/white/option3.jpg"}
+          ],
+          "answer": 0,
+          "explanation": "This is Zenkutsu-dachi, the front stance."
+        }
+      ]
+    },
+    "yellow": {
+      "quizzes": [
+        {
+          "question": "What is the second Heian kata?",
+          "options": ["Heian Nidan", "Heian Shodan", "Heian Sandan"],
+          "answer": 0,
+          "explanation": "Heian Nidan is the second kata."
+        },
+        {
+          "question": "What technique is this?",
+          "image": "images/yellow/technique1.jpg",
+          "options": [
+            {"text": "Oi-zuki", "image": "images/yellow/option1.jpg"},
+            {"text": "Gyaku-zuki", "image": "images/yellow/option2.jpg"},
+            {"text": "Mawashi-geri", "image": "images/yellow/option3.jpg"}
+          ],
+          "answer": 2,
+          "explanation": "This is Mawashi-geri, the roundhouse kick."
+        }
+      ]
+    },
+    "orange": {
+      "quizzes": [
+        {
+          "question": "What block is this?",
+          "image": "images/orange/block1.jpg",
+          "options": [
+            {"text": "Age-uke", "image": "images/orange/option1.jpg"},
+            {"text": "Shuto-uke", "image": "images/orange/option2.jpg"},
+            {"text": "Soto-uke", "image": "images/orange/option3.jpg"}
+          ],
+          "answer": 2,
+          "explanation": "This is Soto-uke, the outside block."
+        }
+      ]
+    },
+    "green": {
+      "quizzes": [
+        {
+          "question": "What technique is this?",
+          "image": "images/green/technique1.jpg",
+          "options": [
+            {"text": "Nukite", "image": "images/green/option1.jpg"},
+            {"text": "Shuto-uke", "image": "images/green/option2.jpg"},
+            {"text": "Mawashi-geri", "image": "images/green/option3.jpg"}
+          ],
+          "answer": 0,
+          "explanation": "This is Nukite, the spear-hand strike."
+        }
+      ]
+    },
+    "blue": {
+      "quizzes": [
+        {
+          "question": "What kick is this?",
+          "image": "images/blue/kick1.jpg",
+          "options": [
+            {"text": "Mae-geri", "image": "images/blue/option1.jpg"},
+            {"text": "Yoko-geri", "image": "images/blue/option2.jpg"},
+            {"text": "Mawashi-geri", "image": "images/blue/option3.jpg"}
+          ],
+          "answer": 0,
+          "explanation": "This is Mae-geri, the front kick."
+        }
+      ]
+    },
+    "purple": {
+      "quizzes": [
+        {
+          "question": "What stance is this?",
+          "image": "images/purple/stance1.jpg",
+          "options": [
+            {"text": "Kiba-dachi", "image": "images/purple/option1.jpg"},
+            {"text": "Zenkutsu-dachi", "image": "images/purple/option2.jpg"},
+            {"text": "Kokutsu-dachi", "image": "images/purple/option3.jpg"}
+          ],
+          "answer": 0,
+          "explanation": "This is Kiba-dachi, used in Tekki Shodan."
+        }
+      ]
+    },
+    "brown": {
+      "quizzes": [
+        {
+          "question": "What technique is this?",
+          "image": "images/brown/technique1.jpg",
+          "options": [
+            {"text": "Empi-uchi", "image": "images/brown/option1.jpg"},
+            {"text": "Nukite", "image": "images/brown/option2.jpg"},
+            {"text": "Yoko-geri", "image": "images/brown/option3.jpg"}
+          ],
+          "answer": 0,
+          "explanation": "This is Empi-uchi, the elbow strike."
+        }
+      ]
+    },
+    "black": {
+      "quizzes": [
+        {
+          "question": "What kick is this?",
+          "image": "images/black/kick1.jpg",
+          "options": [
+            {"text": "Mawashi-geri", "image": "images/black/option1.jpg"},
+            {"text": "Yoko-geri", "image": "images/black/option2.jpg"},
+            {"text": "Ushiro-geri", "image": "images/black/option3.jpg"}
+          ],
+          "answer": 2,
+          "explanation": "This is Ushiro-geri, the back kick."
+        }
+      ]
+    }
+}

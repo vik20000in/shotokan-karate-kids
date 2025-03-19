@@ -2,6 +2,12 @@
     "white": {
       "quizzes": [
         {
+            "question": "What does 'karate' mean?",
+            "options": ["Empty Hand", "Full Fist", "Strong Kick"],
+            "answer": 0,
+            "explanation": "Karate means 'Empty Hand' in Japanese."
+          },
+        {
           "question": "What does 'karate' mean?",
           "options": ["Empty Hand", "Full Fist", "Strong Kick"],
           "answer": 0,
