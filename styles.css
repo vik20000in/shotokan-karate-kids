@@ -39,9 +39,22 @@ h2 {
     max-width: 300px;
 }
 
-.belt-btn:nth-child(1) { background-color: #cccccc; } /* White Belt */
-.belt-btn:nth-child(2) { background-color: #ffcc00; } /* Yellow Belt */
-.belt-btn:nth-child(3) { background-color: #ff6600; } /* Orange Belt */
+.belt-btn:nth-child(2) { 
+    background-color: #ffffff; /* White Belt */
+    color: #000000; /* Black text for visibility */
+} 
+.belt-btn:nth-child(1) { 
+    background-color: #ffff00; /* Yellow Belt */
+    color: #000000; /* Black text for contrast */
+} 
+.belt-btn:nth-child(3) { 
+    background-color: #ffff00; /* Orange Belt */
+    color: #000000; /* Black text for contrast */
+}
+.belt-btn:nth-child(4) { 
+    background-color: #ffa500; /* Orange Belt */
+    color: #000000; /* Black text for contrast */
+}
 .fun-btn { background-color: #33cc99; }
 .lesson-btn { background-color: #ff99cc; }
 

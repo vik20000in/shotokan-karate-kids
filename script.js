@@ -1,3 +1,5 @@
+
+
 // Load data from JSON
 let karateData = {};
 let currentBelt = "";
@@ -7,23 +9,44 @@ let currentQuizIndex = 0;
 let completedLessons = JSON.parse(localStorage.getItem("completedLessons")) || {};
 let stars = JSON.parse(localStorage.getItem("stars")) || [];
 
+// Sections
+const beltSection = document.getElementById("belt-section");
+const choiceSection = document.getElementById("choice-section");
+const lessonListSection = document.getElementById("lesson-list");
+const lessonSection = document.getElementById("lesson-section");
+const quizSection = document.getElementById("quiz-section");
+const progressSection = document.getElementById("progress-section");
+
 fetch("data.json")
     .then(response => response.json())
     .then(data => {
         karateData = data;
         updateProgress();
+        showOnly(beltSection); // Start with only belt selection visible
     });
 
+// Show only the specified section, hide others
+function showOnly(section) {
+    [beltSection, choiceSection, lessonListSection, lessonSection, quizSection].forEach(s => {
+        if (s === section) {
+            s.classList.remove("hidden");
+        } else {
+            s.classList.add("hidden");
+        }
+    });
+    progressSection.classList.remove("hidden"); // Always show progress
+}
+
+// Select a belt and show options
 function selectBelt(belt) {
     currentBelt = belt;
-    document.getElementById("belt-section").classList.add("hidden");
-    document.getElementById("choice-section").classList.remove("hidden");
+    showOnly(choiceSection);
     document.getElementById("belt-title").textContent = `${belt.charAt(0).toUpperCase() + belt.slice(1)} Belt Fun`;
 }
 
+// Show the lesson list for the selected belt
 function showLessons() {
-    document.getElementById("choice-section").classList.add("hidden");
-    document.getElementById("lesson-list").classList.remove("hidden");
+    showOnly(lessonListSection);
     document.getElementById("lesson-belt-title").textContent = `${currentBelt.charAt(0).toUpperCase() + currentBelt.slice(1)} Belt Lessons`;
 
     const lessonsDiv = document.getElementById("lessons");
@@ -37,23 +60,24 @@ function showLessons() {
     });
 }
 
+// Show a specific lesson
 function showLesson(index) {
     currentLesson = karateData[currentBelt].lessons[index];
-    document.getElementById("lesson-list").classList.add("hidden");
-    document.getElementById("lesson-section").classList.remove("hidden");
+    showOnly(lessonSection);
     document.getElementById("lesson-title").textContent = currentLesson.title;
     document.getElementById("lesson-text").textContent = currentLesson.text;
     document.getElementById("lesson-video").innerHTML = `<iframe width="100%" height="200" src="${currentLesson.video}" title="Karate Lesson" frameborder="0" allowfullscreen></iframe>`;
 }
 
+// Start the quiz for the selected belt
 function startQuiz() {
-    document.getElementById("choice-section").classList.add("hidden");
-    document.getElementById("quiz-section").classList.remove("hidden");
+    showOnly(quizSection);
     quizQuestions = karateData[currentBelt].quizzes;
     currentQuizIndex = 0;
     loadQuizQuestion();
 }
 
+// Load the current quiz question
 function loadQuizQuestion() {
     if (currentQuizIndex >= quizQuestions.length) {
         alert("Great job, karate star! You finished the quiz! 🌟");
@@ -93,6 +117,7 @@ function selectAnswer(index, button) {
     button.classList.add("selected");
 }
 
+// Check the selected quiz answer
 function checkAnswer() {
     if (selectedAnswer === null) {
         alert("Pick an answer, little karate champ! 🌟");
@@ -109,20 +134,21 @@ function checkAnswer() {
         alert(`Super try! The right answer is "${quiz.options[quiz.answer]}". ${quiz.explanation} You’re still a star! 🌟`);
     }
     selectedAnswer = null;
+    document.getElementById("submit-quiz").classList.add("hidden");
+    document.getElementById("next-question").classList.remove("hidden");
 }
 
+// Move to the next quiz question
 function nextQuestion() {
-    if (selectedAnswer === null) {
-        alert("Answer this one first, karate hero! 🌟");
-        return;
-    }
     currentQuizIndex++;
     loadQuizQuestion();
+    document.getElementById("submit-quiz").classList.remove("hidden");
+    document.getElementById("next-question").classList.add("hidden");
 }
 
+// Navigation functions
 function backToLessonList() {
-    document.getElementById("lesson-section").classList.add("hidden");
-    document.getElementById("lesson-list").classList.remove("hidden");
+    showOnly(lessonListSection);
     if (!completedLessons[currentBelt]) completedLessons[currentBelt] = [];
     if (!completedLessons[currentBelt].includes(currentLesson.title)) {
         completedLessons[currentBelt].push(currentLesson.title);
@@ -132,16 +158,14 @@ function backToLessonList() {
 }
 
 function backToChoice() {
-    document.getElementById("lesson-list").classList.add("hidden");
-    document.getElementById("quiz-section").classList.add("hidden");
-    document.getElementById("choice-section").classList.remove("hidden");
+    showOnly(choiceSection);
 }
 
 function backToBelts() {
-    document.getElementById("choice-section").classList.add("hidden");
-    document.getElementById("belt-section").classList.remove("hidden");
+    showOnly(beltSection);
 }
 
+// Update the progress display
 function updateProgress() {
     const totalLessons = Object.values(completedLessons).flat().length;
     const totalStars = stars.length;

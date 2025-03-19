@@ -12,7 +12,7 @@
                 "video": "https://www.youtube.com/embed/9eG2gQ8GZ2M?rel=0"
             }
         ],
-        "quizzes": [
+        "quizzes":  [
             {
                 "question": "What stance is this?",
                 "image": "images/zenkutsu.png",
@@ -25,6 +25,54 @@
                 "options": ["Wave it", "Punch straight", "Hide it"],
                 "answer": 1,
                 "explanation": "In Oi-zuki, you punch straight ahead with power!"
+            },
+            {
+                "question": "Which stance has both feet together?",
+                "options": ["Heiko-dachi", "Zenkutsu-dachi", "Kiba-dachi"],
+                "answer": 0,
+                "explanation": "Heiko-dachi is the stance where your feet are together."
+            },
+            {
+                "question": "What is the meaning of 'Karate'?",
+                "options": ["Empty Hand", "Strong Fist", "Fast Kick"],
+                "answer": 0,
+                "explanation": "'Karate' means 'Empty Hand' in Japanese."
+            },
+            {
+                "question": "Which belt comes after White Belt?",
+                "options": ["Yellow Belt", "Orange Belt", "Green Belt"],
+                "answer": 0,
+                "explanation": "The next belt after White is Yellow Belt."
+            },
+            {
+                "question": "What is the first move in Taikyoku Shodan?",
+                "options": ["Punch", "Block", "Kick"],
+                "answer": 1,
+                "explanation": "The first move is a downward block in Zenkutsu-dachi."
+            },
+            {
+                "question": "How many katas are there in Shotokan Karate?",
+                "options": ["15", "20", "26"],
+                "answer": 2,
+                "explanation": "There are 26 katas in Shotokan Karate."
+            },
+            {
+                "question": "What does 'Rei' mean?",
+                "options": ["Bow", "Punch", "Kick"],
+                "answer": 0,
+                "explanation": "'Rei' means to bow, showing respect."
+            },
+            {
+                "question": "Which stance is used for Oi-zuki?",
+                "options": ["Heiko-dachi", "Zenkutsu-dachi", "Kiba-dachi"],
+                "answer": 1,
+                "explanation": "Oi-zuki is performed in Zenkutsu-dachi."
+            },
+            {
+                "question": "What is the purpose of a kata?",
+                "options": ["To fight", "To practice techniques", "To warm up"],
+                "answer": 1,
+                "explanation": "Katas are used to practice and perfect techniques."
             }
         ]
     },
