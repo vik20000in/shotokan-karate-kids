@@ -16,7 +16,7 @@ const ttsOn = document.getElementById("tts-on");
 const ttsOff = document.getElementById("tts-off");
 let ttsEnabled = false;
 
-// Fetch data from data.json
+// Fetch data from data.json and populate belt dropdown
 fetch('data.json')
     .then(response => {
         if (!response.ok) {
@@ -26,6 +26,7 @@ fetch('data.json')
     })
     .then(data => {
         karateData = data;
+        populateBeltDropdown();
         updateProgress();
         showOnly(beltSection);
     })
@@ -33,6 +34,17 @@ fetch('data.json')
         console.error('Error loading data:', error);
         alert('Could not load quiz data. Please try again later.');
     });
+
+// Populate the belt dropdown with options from data.json
+function populateBeltDropdown() {
+    const dropdown = document.getElementById("belt-dropdown");
+    Object.keys(karateData).forEach(belt => {
+        const option = document.createElement("option");
+        option.value = belt;
+        option.textContent = `${belt.charAt(0).toUpperCase() + belt.slice(1)} Belt`;
+        dropdown.appendChild(option);
+    });
+}
 
 // Show only the specified section, hide others
 function showOnly(section) {
@@ -44,6 +56,7 @@ function showOnly(section) {
 
 // Select a belt and show options
 function selectBelt(belt) {
+    if (!belt) return; // Prevent action if no belt is selected
     currentBelt = belt;
     showOnly(choiceSection);
     document.getElementById("belt-title").textContent = `${belt.charAt(0).toUpperCase() + belt.slice(1)} Belt Fun`;

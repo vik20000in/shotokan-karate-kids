@@ -10,9 +10,9 @@
     <div id="belt-section">
         <h1>🥋 Karate Quest 🥋</h1>
         <p>Pick your belt to start!</p>
-        <button class="fun-btn" onclick="selectBelt('white')">White Belt</button>
-        <button class="fun-btn" onclick="selectBelt('yellow')">Yellow Belt</button>
-        <button class="fun-btn" onclick="selectBelt('black')">Black Belt</button>
+        <select id="belt-dropdown" onchange="selectBelt(this.value)">
+            <option value="" disabled selected>Select a belt</option>
+        </select>
     </div>
 
     <div id="choice-section" class="hidden">
