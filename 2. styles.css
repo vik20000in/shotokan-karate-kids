@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 22px;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+#lesson-video {
+    margin: 20px 0;
+}
+
+#quiz-options {
+    margin: 20px 0;
+}
+
+.option {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #dcdcdc;
+}
+
+#progress-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e8f1f5;
+    border-radius: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    select, button {
+        width: 100%;
+        font-size: 14px;
+    }
+}

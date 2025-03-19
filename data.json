@@ -1,0 +1,58 @@
+{
+    "white": {
+        "lessons": [
+            {
+                "title": "Basic Stance: Zenkutsu-dachi",
+                "text": "Zenkutsu-dachi is a front stance. Stand with one leg forward and the other back, keeping your knees bent.",
+                "video": "https://www.youtube.com/embed/5A3hJnxmxMw",
+                "quiz": {
+                    "question": "Which stance has one leg forward and one leg back?",
+                    "options": ["Heiko-dachi", "Zenkutsu-dachi", "Kiba-dachi"],
+                    "answer": 1,
+                    "explanation": "Zenkutsu-dachi is a front stance with one leg forward and one back."
+                }
+            },
+            {
+                "title": "Straight Punch: Oi-zuki",
+                "text": "Oi-zuki is a straight punch. Start in Zenkutsu-dachi and punch forward with your fist.",
+                "video": "https://www.youtube.com/embed/9eG2gQ8GZ2M",
+                "quiz": {
+                    "question": "Which hand do you punch with in Oi-zuki?",
+                    "options": ["Left", "Right", "Both"],
+                    "answer": 2,
+                    "explanation": "In Oi-zuki, you can punch with either hand, but both is correct in practice."
+                }
+            }
+        ]
+    },
+    "yellow": {
+        "lessons": [
+            {
+                "title": "Front Kick: Mae-geri",
+                "text": "Mae-geri is a front kick. Lift your knee and kick straight ahead with the ball of your foot.",
+                "video": "https://www.youtube.com/embed/6XJ2cCdkzWI",
+                "quiz": {
+                    "question": "What does 'Mae-geri' mean?",
+                    "options": ["Side kick", "Front kick", "Roundhouse kick"],
+                    "answer": 1,
+                    "explanation": "'Mae-geri' means front kick in Japanese."
+                }
+            }
+        ]
+    },
+    "orange": {
+        "lessons": [
+            {
+                "title": "Knife-Hand Block: Shuto-uke",
+                "text": "Shuto-uke is a knife-hand block. Use the side of your hand to block an attack.",
+                "video": "https://www.youtube.com/embed/8xKzP2ZkoXY",
+                "quiz": {
+                    "question": "Which block uses an open hand?",
+                    "options": ["Age-uke", "Soto-uke", "Shuto-uke"],
+                    "answer": 2,
+                    "explanation": "Shuto-uke uses an open hand to block."
+                }
+            }
+        ]
+    }
+}
