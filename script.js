@@ -1,38 +1,43 @@
-
-
-// Load data from JSON
-let karateData = {};
+// Variables
+let karateData = null; // Will be loaded from data.json
 let currentBelt = "";
-let currentLesson = null;
 let quizQuestions = [];
 let currentQuizIndex = 0;
-let completedLessons = JSON.parse(localStorage.getItem("completedLessons")) || {};
 let stars = JSON.parse(localStorage.getItem("stars")) || [];
 
 // Sections
 const beltSection = document.getElementById("belt-section");
 const choiceSection = document.getElementById("choice-section");
-const lessonListSection = document.getElementById("lesson-list");
-const lessonSection = document.getElementById("lesson-section");
 const quizSection = document.getElementById("quiz-section");
 const progressSection = document.getElementById("progress-section");
 
-fetch("data.json")
-    .then(response => response.json())
+// TTS controls
+const ttsOn = document.getElementById("tts-on");
+const ttsOff = document.getElementById("tts-off");
+let ttsEnabled = false;
+
+// Fetch data from data.json
+fetch('data.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to load data.json');
+        }
+        return response.json();
+    })
     .then(data => {
         karateData = data;
         updateProgress();
-        showOnly(beltSection); // Start with only belt selection visible
+        showOnly(beltSection);
+    })
+    .catch(error => {
+        console.error('Error loading data:', error);
+        alert('Could not load quiz data. Please try again later.');
     });
 
 // Show only the specified section, hide others
 function showOnly(section) {
-    [beltSection, choiceSection, lessonListSection, lessonSection, quizSection].forEach(s => {
-        if (s === section) {
-            s.classList.remove("hidden");
-        } else {
-            s.classList.add("hidden");
-        }
+    [beltSection, choiceSection, quizSection].forEach(s => {
+        s.classList.toggle("hidden", s !== section);
     });
     progressSection.classList.remove("hidden"); // Always show progress
 }
@@ -44,33 +49,12 @@ function selectBelt(belt) {
     document.getElementById("belt-title").textContent = `${belt.charAt(0).toUpperCase() + belt.slice(1)} Belt Fun`;
 }
 
-// Show the lesson list for the selected belt
-function showLessons() {
-    showOnly(lessonListSection);
-    document.getElementById("lesson-belt-title").textContent = `${currentBelt.charAt(0).toUpperCase() + currentBelt.slice(1)} Belt Lessons`;
-
-    const lessonsDiv = document.getElementById("lessons");
-    lessonsDiv.innerHTML = "";
-    karateData[currentBelt].lessons.forEach((lesson, index) => {
-        const btn = document.createElement("button");
-        btn.classList.add("lesson-btn");
-        btn.textContent = lesson.title;
-        btn.onclick = () => showLesson(index);
-        lessonsDiv.appendChild(btn);
-    });
-}
-
-// Show a specific lesson
-function showLesson(index) {
-    currentLesson = karateData[currentBelt].lessons[index];
-    showOnly(lessonSection);
-    document.getElementById("lesson-title").textContent = currentLesson.title;
-    document.getElementById("lesson-text").textContent = currentLesson.text;
-    document.getElementById("lesson-video").innerHTML = `<iframe width="100%" height="200" src="${currentLesson.video}" title="Karate Lesson" frameborder="0" allowfullscreen></iframe>`;
-}
-
 // Start the quiz for the selected belt
 function startQuiz() {
+    if (!karateData) {
+        alert('Data is still loading. Please wait a moment.');
+        return;
+    }
     showOnly(quizSection);
     quizQuestions = karateData[currentBelt].quizzes;
     currentQuizIndex = 0;
@@ -105,70 +89,69 @@ function loadQuizQuestion() {
         btn.onclick = () => selectAnswer(index, btn);
         optionsDiv.appendChild(btn);
     });
+
+    document.getElementById("feedback").classList.add("hidden");
+    document.getElementById("next-question").disabled = false; // Always enabled
+
+    if (ttsEnabled) {
+        let optionsText = quiz.options.map((option, index) => `Option ${String.fromCharCode(65 + index)}: ${option}`).join('. ');
+        let fullText = `The question is: ${quiz.question}. ${optionsText}`;
+        speak(fullText);
+    }
 }
 
-let selectedAnswer = null;
+// Handle answer selection
 function selectAnswer(index, button) {
-    selectedAnswer = index;
-    const buttons = document.getElementsByClassName("quiz-btn");
-    for (let btn of buttons) {
-        btn.classList.remove("selected");
-    }
-    button.classList.add("selected");
-}
-
-// Check the selected quiz answer
-function checkAnswer() {
-    if (selectedAnswer === null) {
-        alert("Pick an answer, little karate champ! 🌟");
-        return;
-    }
-
     const quiz = quizQuestions[currentQuizIndex];
-    if (selectedAnswer === quiz.answer) {
-        alert(`Hiyah! Awesome job! 🌟 ${quiz.explanation}`);
+    const feedback = document.getElementById("feedback");
+
+    if (index === quiz.answer) {
+        feedback.textContent = "Hiyah! That’s right! 🌟";
+        feedback.style.color = "#33cc99"; // Green
         stars.push(`Star for Quiz ${currentQuizIndex + 1} (${currentBelt})`);
         localStorage.setItem("stars", JSON.stringify(stars));
         updateProgress();
     } else {
-        alert(`Super try! The right answer is "${quiz.options[quiz.answer]}". ${quiz.explanation} You’re still a star! 🌟`);
+        feedback.textContent = "Oops! Try again, champ! 🌟";
+        feedback.style.color = "#ff3366"; // Red
     }
-    selectedAnswer = null;
-    document.getElementById("submit-quiz").classList.add("hidden");
-    document.getElementById("next-question").classList.remove("hidden");
+    feedback.classList.remove("hidden");
+
+    if (ttsEnabled) {
+        speak(button.textContent); // Read selected answer
+        if (index === quiz.answer && quiz.explanation) {
+            speak(quiz.explanation); // Read explanation if correct
+        }
+    }
 }
 
-// Move to the next quiz question
+// Move to the next question
 function nextQuestion() {
     currentQuizIndex++;
     loadQuizQuestion();
-    document.getElementById("submit-quiz").classList.remove("hidden");
-    document.getElementById("next-question").classList.add("hidden");
 }
 
-// Navigation functions
-function backToLessonList() {
-    showOnly(lessonListSection);
-    if (!completedLessons[currentBelt]) completedLessons[currentBelt] = [];
-    if (!completedLessons[currentBelt].includes(currentLesson.title)) {
-        completedLessons[currentBelt].push(currentLesson.title);
-        localStorage.setItem("completedLessons", JSON.stringify(completedLessons));
-        updateProgress();
-    }
-}
-
+// Navigation
 function backToChoice() {
     showOnly(choiceSection);
 }
 
-function backToBelts() {
-    showOnly(beltSection);
+// Update progress display
+function updateProgress() {
+    document.getElementById("progress-text").textContent = `Stars: ${stars.length}`;
 }
 
-// Update the progress display
-function updateProgress() {
-    const totalLessons = Object.values(completedLessons).flat().length;
-    const totalStars = stars.length;
-    document.getElementById("progress-text").textContent = 
-        `Lessons Done: ${totalLessons} | Stars: ${totalStars}`;
+// Text-to-Speech functionality
+function speak(text) {
+    if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        speechSynthesis.speak(utterance);
+    } else {
+        console.warn("Text-to-Speech not supported in this browser.");
+    }
 }
+
+// TTS toggle listener
+ttsOn.addEventListener('change', () => { ttsEnabled = true; });
+ttsOff.addEventListener('change', () => { ttsEnabled = false; });

@@ -3,55 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shotokan Karate Kids</title>
+    <title>Karate Quiz App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🥋 Karate Fun Zone 🥋</h1>
-        
-        <div id="belt-section">
-            <h2>Pick Your Belt!</h2>
-            <button class="belt-btn" onclick="selectBelt('white')">White Belt</button>
-            <button class="belt-btn" onclick="selectBelt('yellow')">Yellow Belt</button>
-            <button class="belt-btn" onclick="selectBelt('orange')">Orange Belt</button>
-        </div>
-
-        <div id="choice-section" class="hidden">
-            <h2 id="belt-title"></h2>
-            <button class="fun-btn" onclick="showLessons()">Lessons</button>
-            <button class="fun-btn" onclick="startQuiz()">Quiz</button>
-            <button class="fun-btn" onclick="backToBelts()">Back to Belts</button>
-        </div>
-
-        <div id="lesson-list" class="hidden">
-            <h2 id="lesson-belt-title"></h2>
-            <div id="lessons"></div>
-            <button class="fun-btn" onclick="backToChoice()">Back to Options</button>
-        </div>
-
-        <div id="lesson-section" class="hidden">
-            <h2 id="lesson-title"></h2>
-            <p id="lesson-text"></p>
-            <div id="lesson-video"></div>
-            <button class="fun-btn" onclick="backToLessonList()">Pick Another Lesson</button>
-        </div>
-
-        <div id="quiz-section" class="hidden">
-            <h2>🧠 Karate Quiz Time! 🧠</h2>
-            <p id="quiz-question"></p>
-            <img id="quiz-image" class="hidden" src="" alt="Quiz Image">
-            <div id="quiz-options"></div>
-            <button class="fun-btn" id="submit-quiz" onclick="checkAnswer()">Check My Answer!</button>
-            <button class="fun-btn" onclick="nextQuestion()">Next Question</button>
-            <button class="fun-btn" onclick="backToChoice()">Back to Options</button>
-        </div>
-
-        <div id="progress-section">
-            <h2>🌟 Your Karate Stars 🌟</h2>
-            <p id="progress-text">Lessons Done: 0 | Stars: 0</p>
-        </div>
+    <div id="belt-section">
+        <h1>🥋 Karate Quest 🥋</h1>
+        <p>Pick your belt to start!</p>
+        <button class="fun-btn" onclick="selectBelt('white')">White Belt</button>
+        <button class="fun-btn" onclick="selectBelt('yellow')">Yellow Belt</button>
+        <button class="fun-btn" onclick="selectBelt('black')">Black Belt</button>
     </div>
+
+    <div id="choice-section" class="hidden">
+        <h2 id="belt-title">Belt Fun</h2>
+        <button class="fun-btn" onclick="startQuiz()">Take the Quiz! 🧠</button>
+        <button class="fun-btn" onclick="showOnly(beltSection)">Back to Belts</button>
+    </div>
+
+    <div id="quiz-section" class="hidden">
+        <h2>🧠 Karate Quiz Time! 🧠</h2>
+        <!-- TTS Toggle with Radio Buttons -->
+        <div id="tts-controls">
+            <label><input type="radio" name="tts" id="tts-on" value="on"> Voice On</label>
+            <label><input type="radio" name="tts" id="tts-off" value="off" checked> Voice Off</label>
+        </div>
+        <p id="quiz-question"></p>
+        <img id="quiz-image" class="hidden" src="" alt="Quiz Image">
+        <div id="quiz-options"></div>
+        <div id="feedback" class="hidden"></div>
+        <button class="fun-btn" id="next-question" onclick="nextQuestion()">Next Question</button>
+        <button class="fun-btn" onclick="backToChoice()">Back to Options</button>
+    </div>
+
+    <div id="progress-section">
+        <p id="progress-text">Stars: 0</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
