@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shotokan Karate Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shotokan Karate Kids</h1>
+        <div id="belt-selection">
+            <h2>Choose Your Belt</h2>
+            <select id="belt-select">
+                <option value="white">White Belt</option>
+                <option value="yellow">Yellow Belt</option>
+                <option value="orange">Orange Belt</option>
+            </select>
+            <button onclick="loadContent()">Start Learning</button>
+        </div>
+
+        <div id="lesson-section" class="hidden">
+            <h2 id="lesson-title"></h2>
+            <p id="lesson-text"></p>
+            <div id="lesson-video"></div>
+            <button onclick="showQuiz()">Take Quiz</button>
+            <button onclick="backToBelt()">Back to Belt Selection</button>
+        </div>
+
+        <div id="quiz-section" class="hidden">
+            <h2>Quiz Time!</h2>
+            <p id="quiz-question"></p>
+            <div id="quiz-options"></div>
+            <button id="submit-quiz" onclick="submitQuiz()">Submit</button>
+            <button onclick="backToLesson()">Back to Lesson</button>
+        </div>
+
+        <div id="progress-section">
+            <h2>Your Karate Journey</h2>
+            <p id="progress-text">Lessons Completed: 0 | Badges Earned: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
