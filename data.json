@@ -1,115 +1,522 @@
 {
     "white": {
-        "lessons": [
-            {
-                "title": "Fun Stance: Zenkutsu-dachi",
-                "text": "Zenkutsu-dachi is a cool front stance! Put one leg in front and one leg back, like a superhero ready to jump!",
-                "video": "https://www.youtube.com/embed/5A3hJnxmxMw?rel=0"
-            },
-            {
-                "title": "Power Punch: Oi-zuki",
-                "text": "Oi-zuki is a strong punch! Stand in Zenkutsu-dachi and punch straight ahead, like hitting a target!",
-                "video": "https://www.youtube.com/embed/9eG2gQ8GZ2M?rel=0"
-            }
-        ],
-        "quizzes":  [
-            {
-                "question": "What stance is this?",
-                "image": "images/zenkutsu.png",
-                "options": ["Heiko-dachi", "Zenkutsu-dachi", "Kiba-dachi"],
-                "answer": 1,
-                "explanation": "This is Zenkutsu-dachi, a front stance with one leg forward!"
-            },
-            {
-                "question": "What do you do with your fist in Oi-zuki?",
-                "options": ["Wave it", "Punch straight", "Hide it"],
-                "answer": 1,
-                "explanation": "In Oi-zuki, you punch straight ahead with power!"
-            },
-            {
-                "question": "Which stance has both feet together?",
-                "options": ["Heiko-dachi", "Zenkutsu-dachi", "Kiba-dachi"],
-                "answer": 0,
-                "explanation": "Heiko-dachi is the stance where your feet are together."
-            },
-            {
-                "question": "What is the meaning of 'Karate'?",
-                "options": ["Empty Hand", "Strong Fist", "Fast Kick"],
-                "answer": 0,
-                "explanation": "'Karate' means 'Empty Hand' in Japanese."
-            },
-            {
-                "question": "Which belt comes after White Belt?",
-                "options": ["Yellow Belt", "Orange Belt", "Green Belt"],
-                "answer": 0,
-                "explanation": "The next belt after White is Yellow Belt."
-            },
-            {
-                "question": "What is the first move in Taikyoku Shodan?",
-                "options": ["Punch", "Block", "Kick"],
-                "answer": 1,
-                "explanation": "The first move is a downward block in Zenkutsu-dachi."
-            },
-            {
-                "question": "How many katas are there in Shotokan Karate?",
-                "options": ["15", "20", "26"],
-                "answer": 2,
-                "explanation": "There are 26 katas in Shotokan Karate."
-            },
-            {
-                "question": "What does 'Rei' mean?",
-                "options": ["Bow", "Punch", "Kick"],
-                "answer": 0,
-                "explanation": "'Rei' means to bow, showing respect."
-            },
-            {
-                "question": "Which stance is used for Oi-zuki?",
-                "options": ["Heiko-dachi", "Zenkutsu-dachi", "Kiba-dachi"],
-                "answer": 1,
-                "explanation": "Oi-zuki is performed in Zenkutsu-dachi."
-            },
-            {
-                "question": "What is the purpose of a kata?",
-                "options": ["To fight", "To practice techniques", "To warm up"],
-                "answer": 1,
-                "explanation": "Katas are used to practice and perfect techniques."
-            }
-        ]
+      "quizzes": [
+        {
+          "question": "What does 'karate' mean?",
+          "options": ["Empty Hand", "Full Fist", "Strong Kick"],
+          "answer": 0,
+          "explanation": "Karate means 'Empty Hand' in Japanese."
+        },
+        {
+          "question": "What is the first kata you learn?",
+          "options": ["Heian Shodan", "Heian Nidan", "Heian Sandan"],
+          "answer": 0,
+          "explanation": "Heian Shodan is the first kata in Shotokan Karate."
+        },
+        {
+          "question": "How do you say 'bow' in Japanese?",
+          "options": ["Rei", "Kiai", "Osu"],
+          "answer": 0,
+          "explanation": "'Rei' means to bow, showing respect."
+        },
+        {
+          "question": "What is the name of the front stance?",
+          "options": ["Zenkutsu-dachi", "Kiba-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "Zenkutsu-dachi is the front stance."
+        },
+        {
+          "question": "What is the purpose of a kata?",
+          "options": ["To fight", "To practice techniques", "To warm up"],
+          "answer": 1,
+          "explanation": "Katas are used to practice and perfect techniques."
+        },
+        {
+          "question": "What does 'Osu' mean in karate?",
+          "options": ["Hello", "Yes, I understand", "Goodbye"],
+          "answer": 1,
+          "explanation": "'Osu' is a sign of respect and acknowledgment."
+        },
+        {
+          "question": "What is the name of the basic punch?",
+          "options": ["Oi-zuki", "Gyaku-zuki", "Kizami-zuki"],
+          "answer": 0,
+          "explanation": "Oi-zuki is the basic stepping punch."
+        },
+        {
+          "question": "How many Heian katas are there?",
+          "options": ["3", "5", "7"],
+          "answer": 1,
+          "explanation": "There are 5 Heian katas."
+        },
+        {
+          "question": "What is the meaning of 'Dojo'?",
+          "options": ["Training hall", "Uniform", "Belt"],
+          "answer": 0,
+          "explanation": "Dojo means 'place of the way,' where we train."
+        },
+        {
+          "question": "What stance is this?",
+          "image": "images/white/stance1.jpg",
+          "options": ["Zenkutsu-dachi", "Kiba-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "This is Zenkutsu-dachi, the front stance."
+        }
+      ]
     },
     "yellow": {
-        "lessons": [
-            {
-                "title": "Super Kick: Mae-geri",
-                "text": "Mae-geri is a front kick! Lift your knee up high and kick straight with the ball of your foot, like kicking a ball!",
-                "video": "https://www.youtube.com/embed/6XJ2cCdkzWI?rel=0"
-            }
-        ],
-        "quizzes": [
-            {
-                "question": "Which kick is shown here?",
-                "image": "images/maegeri.png",
-                "options": ["Side Kick", "Front Kick (Mae-geri)", "Roundhouse Kick"],
-                "answer": 1,
-                "explanation": "This is Mae-geri, a super front kick!"
-            }
-        ]
+      "quizzes": [
+        {
+          "question": "What is the second Heian kata?",
+          "options": ["Heian Nidan", "Heian Shodan", "Heian Sandan"],
+          "answer": 0,
+          "explanation": "Heian Nidan is the second kata."
+        },
+        {
+          "question": "What stance is used for the first move in Heian Nidan?",
+          "options": ["Zenkutsu-dachi", "Kokutsu-dachi", "Kiba-dachi"],
+          "answer": 1,
+          "explanation": "The first move is in Kokutsu-dachi."
+        },
+        {
+          "question": "What is the name of the knife-hand block?",
+          "options": ["Shuto-uke", "Age-uke", "Soto-uke"],
+          "answer": 0,
+          "explanation": "Shuto-uke is the knife-hand block."
+        },
+        {
+          "question": "How many moves are in Heian Nidan?",
+          "options": ["26", "21", "24"],
+          "answer": 0,
+          "explanation": "Heian Nidan has 26 moves."
+        },
+        {
+          "question": "What does 'Mawashi-geri' mean?",
+          "options": ["Roundhouse kick", "Front kick", "Side kick"],
+          "answer": 0,
+          "explanation": "'Mawashi-geri' is a roundhouse kick."
+        },
+        {
+          "question": "What is the purpose of the 'kiai' in a kata?",
+          "options": ["To show spirit", "To breathe", "To rest"],
+          "answer": 0,
+          "explanation": "The kiai is a shout to demonstrate spirit and focus."
+        },
+        {
+          "question": "What is the name of the reverse punch?",
+          "options": ["Gyaku-zuki", "Oi-zuki", "Kizami-zuki"],
+          "answer": 0,
+          "explanation": "Gyaku-zuki is the reverse punch."
+        },
+        {
+          "question": "How do you say 'begin' in Japanese?",
+          "options": ["Hajime", "Yame", "Mokuso"],
+          "answer": 0,
+          "explanation": "'Hajime' means 'begin' or 'start'."
+        },
+        {
+          "question": "What is the meaning of 'Kumite'?",
+          "options": ["Sparring", "Kata", "Basics"],
+          "answer": 0,
+          "explanation": "Kumite is sparring practice."
+        },
+        {
+          "question": "What technique is this?",
+          "image": "images/yellow/technique1.jpg",
+          "options": ["Oi-zuki", "Gyaku-zuki", "Mawashi-geri"],
+          "answer": 2,
+          "explanation": "This is Mawashi-geri, the roundhouse kick."
+        }
+      ]
     },
     "orange": {
-        "lessons": [
-            {
-                "title": "Ninja Block: Shuto-uke",
-                "text": "Shuto-uke is a ninja block with your hand! Use the side of your hand to stop an attack, like a shield!",
-                "video": "https://www.youtube.com/embed/8xKzP2ZkoXY?rel=0"
-            }
-        ],
-        "quizzes": [
-            {
-                "question": "What block is this?",
-                "image": "images/shutouke.png",
-                "options": ["Age-uke", "Soto-uke", "Shuto-uke"],
-                "answer": 2,
-                "explanation": "This is Shuto-uke, a ninja block with the side of your hand!"
-            }
-        ]
+      "quizzes": [
+        {
+          "question": "What is the third Heian kata?",
+          "options": ["Heian Sandan", "Heian Yondan", "Heian Godan"],
+          "answer": 0,
+          "explanation": "Heian Sandan is the third kata."
+        },
+        {
+          "question": "What stance is used for the first move in Heian Sandan?",
+          "options": ["Zenkutsu-dachi", "Kiba-dachi", "Kokutsu-dachi"],
+          "answer": 1,
+          "explanation": "The first move is in Kiba-dachi."
+        },
+        {
+          "question": "What is the name of the side kick?",
+          "options": ["Yoko-geri", "Mae-geri", "Mawashi-geri"],
+          "answer": 0,
+          "explanation": "Yoko-geri is the side kick."
+        },
+        {
+          "question": "How many moves are in Heian Sandan?",
+          "options": ["23", "26", "21"],
+          "answer": 0,
+          "explanation": "Heian Sandan has 23 moves."
+        },
+        {
+          "question": "What does 'Uke' mean?",
+          "options": ["Block", "Punch", "Kick"],
+          "answer": 0,
+          "explanation": "'Uke' means block."
+        },
+        {
+          "question": "What is the purpose of the 'embusen' in a kata?",
+          "options": ["The path of movement", "The breathing pattern", "The timing"],
+          "answer": 0,
+          "explanation": "Embusen is the path or line of movement in a kata."
+        },
+        {
+          "question": "What is the name of the upper block?",
+          "options": ["Age-uke", "Soto-uke", "Uchi-uke"],
+          "answer": 0,
+          "explanation": "Age-uke is the upper block."
+        },
+        {
+          "question": "How do you say 'stop' in Japanese?",
+          "options": ["Yame", "Hajime", "Mokuso"],
+          "answer": 0,
+          "explanation": "'Yame' means 'stop'."
+        },
+        {
+          "question": "What is the meaning of 'Kime'?",
+          "options": ["Focus", "Speed", "Power"],
+          "answer": 0,
+          "explanation": "Kime means focus, the momentary tightening of muscles."
+        },
+        {
+          "question": "What block is this?",
+          "image": "images/orange/block1.jpg",
+          "options": ["Age-uke", "Shuto-uke", "Soto-uke"],
+          "answer": 2,
+          "explanation": "This is Soto-uke, the outside block."
+        }
+      ]
+    },
+    "green": {
+      "quizzes": [
+        {
+          "question": "What is the fourth Heian kata?",
+          "options": ["Heian Yondan", "Heian Sandan", "Heian Godan"],
+          "answer": 0,
+          "explanation": "Heian Yondan is the fourth kata."
+        },
+        {
+          "question": "What stance is used for the first move in Heian Yondan?",
+          "options": ["Zenkutsu-dachi", "Kokutsu-dachi", "Kiba-dachi"],
+          "answer": 1,
+          "explanation": "The first move is in Kokutsu-dachi."
+        },
+        {
+          "question": "What does 'Tekki' mean?",
+          "options": ["Iron Horse", "Flying Bird", "Crane Stance"],
+          "answer": 0,
+          "explanation": "'Tekki' means 'Iron Horse,' referring to a strong stance."
+        },
+        {
+          "question": "How many moves are in Heian Yondan?",
+          "options": ["27", "23", "26"],
+          "answer": 0,
+          "explanation": "Heian Yondan has 27 moves."
+        },
+        {
+          "question": "What is the name of the spear-hand strike?",
+          "options": ["Nukite", "Shuto", "Uraken"],
+          "answer": 0,
+          "explanation": "Nukite is the spear-hand strike."
+        },
+        {
+          "question": "What is the purpose of 'bunkai'?",
+          "options": ["Application of techniques", "Kata performance", "Breathing exercises"],
+          "answer": 0,
+          "explanation": "Bunkai is the practical application of kata techniques."
+        },
+        {
+          "question": "What does 'Kihon' mean?",
+          "options": ["Basics", "Sparring", "Forms"],
+          "answer": 0,
+          "explanation": "Kihon means basic techniques."
+        },
+        {
+          "question": "How do you say 'attention' in Japanese?",
+          "options": ["Kiotsuke", "Yoi", "Mokuso"],
+          "answer": 0,
+          "explanation": "'Kiotsuke' means 'attention' or 'stand ready'."
+        },
+        {
+          "question": "What is the meaning of 'Zanshin'?",
+          "options": ["Awareness", "Speed", "Power"],
+          "answer": 0,
+          "explanation": "Zanshin means awareness, staying alert after a technique."
+        },
+        {
+          "question": "What technique is this?",
+          "image": "images/green/technique1.jpg",
+          "options": ["Nukite", "Shuto-uke", "Mawashi-geri"],
+          "answer": 0,
+          "explanation": "This is Nukite, the spear-hand strike."
+        }
+      ]
+    },
+    "blue": {
+      "quizzes": [
+        {
+          "question": "What is the fifth Heian kata?",
+          "options": ["Heian Godan", "Heian Yondan", "Tekki Shodan"],
+          "answer": 0,
+          "explanation": "Heian Godan is the fifth kata."
+        },
+        {
+          "question": "What stance is used for the first move in Heian Godan?",
+          "options": ["Zenkutsu-dachi", "Kokutsu-dachi", "Kiba-dachi"],
+          "answer": 0,
+          "explanation": "The first move is in Zenkutsu-dachi."
+        },
+        {
+          "question": "What is the name of the backfist strike?",
+          "options": ["Uraken", "Nukite", "Shuto"],
+          "answer": 0,
+          "explanation": "Uraken is the backfist strike."
+        },
+        {
+          "question": "How many moves are in Heian Godan?",
+          "options": ["23", "27", "26"],
+          "answer": 0,
+          "explanation": "Heian Godan has 23 moves."
+        },
+        {
+          "question": "What does 'Mae-geri' mean?",
+          "options": ["Front kick", "Roundhouse kick", "Side kick"],
+          "answer": 0,
+          "explanation": "'Mae-geri' is a front kick."
+        },
+        {
+          "question": "What is the name of the inside block?",
+          "options": ["Uchi-uke", "Soto-uke", "Age-uke"],
+          "answer": 0,
+          "explanation": "Uchi-uke is the inside block."
+        },
+        {
+          "question": "What does 'Yoi' mean?",
+          "options": ["Ready", "Stop", "Begin"],
+          "answer": 0,
+          "explanation": "'Yoi' means 'ready' before starting."
+        },
+        {
+          "question": "What is the purpose of a 'kiai'?",
+          "options": ["To focus energy", "To rest", "To signal the end"],
+          "answer": 0,
+          "explanation": "A kiai helps focus energy and show spirit."
+        },
+        {
+          "question": "How many kiai points are in Heian Godan?",
+          "options": ["1", "2", "3"],
+          "answer": 1,
+          "explanation": "Heian Godan has 2 kiai points."
+        },
+        {
+          "question": "What kick is this?",
+          "image": "images/blue/kick1.jpg",
+          "options": ["Mae-geri", "Yoko-geri", "Mawashi-geri"],
+          "answer": 0,
+          "explanation": "This is Mae-geri, the front kick."
+        }
+      ]
+    },
+    "purple": {
+      "quizzes": [
+        {
+          "question": "What is the first Tekki kata?",
+          "options": ["Tekki Shodan", "Tekki Nidan", "Tekki Sandan"],
+          "answer": 0,
+          "explanation": "Tekki Shodan is the first Tekki kata."
+        },
+        {
+          "question": "What stance is mostly used in Tekki Shodan?",
+          "options": ["Kiba-dachi", "Zenkutsu-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "Kiba-dachi is the main stance in Tekki Shodan."
+        },
+        {
+          "question": "What does 'Shodan' mean?",
+          "options": ["First level", "Second level", "Third level"],
+          "answer": 0,
+          "explanation": "'Shodan' means 'first level'."
+        },
+        {
+          "question": "How many moves are in Tekki Shodan?",
+          "options": ["29", "23", "27"],
+          "answer": 0,
+          "explanation": "Tekki Shodan has 29 moves."
+        },
+        {
+          "question": "What is the name of the hammerfist strike?",
+          "options": ["Tetsui", "Uraken", "Nukite"],
+          "answer": 0,
+          "explanation": "Tetsui is the hammerfist strike."
+        },
+        {
+          "question": "What does 'Kata' mean?",
+          "options": ["Form", "Fight", "Dance"],
+          "answer": 0,
+          "explanation": "Kata means 'form,' a sequence of movements."
+        },
+        {
+          "question": "What is the purpose of Tekki katas?",
+          "options": ["Side-to-side fighting", "Long-range fighting", "Jumping techniques"],
+          "answer": 0,
+          "explanation": "Tekki katas focus on side-to-side fighting."
+        },
+        {
+          "question": "How do you say 'meditation' in Japanese?",
+          "options": ["Mokuso", "Hajime", "Yame"],
+          "answer": 0,
+          "explanation": "'Mokuso' means meditation."
+        },
+        {
+          "question": "What block follows the first move in Tekki Shodan?",
+          "options": ["Uchi-uke", "Soto-uke", "Gedan-barai"],
+          "answer": 0,
+          "explanation": "The second move is Uchi-uke."
+        },
+        {
+          "question": "What stance is this?",
+          "image": "images/purple/stance1.jpg",
+          "options": ["Kiba-dachi", "Zenkutsu-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "This is Kiba-dachi, used in Tekki Shodan."
+        }
+      ]
+    },
+    "brown": {
+      "quizzes": [
+        {
+          "question": "What is a common kata for brown belt?",
+          "options": ["Bassai Dai", "Heian Godan", "Tekki Shodan"],
+          "answer": 0,
+          "explanation": "Bassai Dai is often learned at brown belt."
+        },
+        {
+          "question": "What does 'Bassai' mean?",
+          "options": ["To penetrate a fortress", "Iron horse", "Peaceful mind"],
+          "answer": 0,
+          "explanation": "'Bassai' means 'to penetrate a fortress'."
+        },
+        {
+          "question": "How many moves are in Bassai Dai?",
+          "options": ["42", "29", "23"],
+          "answer": 0,
+          "explanation": "Bassai Dai has 42 moves."
+        },
+        {
+          "question": "What stance starts Bassai Dai?",
+          "options": ["Zenkutsu-dachi", "Kiba-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "Bassai Dai starts in Zenkutsu-dachi."
+        },
+        {
+          "question": "What is the name of the elbow strike?",
+          "options": ["Empi-uchi", "Tetsui", "Uraken"],
+          "answer": 0,
+          "explanation": "Empi-uchi is the elbow strike."
+        },
+        {
+          "question": "What does 'Dai' mean in Bassai Dai?",
+          "options": ["Major", "Minor", "First"],
+          "answer": 0,
+          "explanation": "'Dai' means 'major' or 'greater'."
+        },
+        {
+          "question": "What is the purpose of brown belt training?",
+          "options": ["Prepare for black belt", "Learn basics", "Practice katas only"],
+          "answer": 0,
+          "explanation": "Brown belt prepares you for black belt."
+        },
+        {
+          "question": "How many kiai points are in Bassai Dai?",
+          "options": ["2", "1", "3"],
+          "answer": 0,
+          "explanation": "Bassai Dai has 2 kiai points."
+        },
+        {
+          "question": "What does 'Kyū' mean?",
+          "options": ["Grade below black", "Black belt rank", "Teacher"],
+          "answer": 0,
+          "explanation": "'Kyū' refers to ranks below black belt."
+        },
+        {
+          "question": "What technique is this?",
+          "image": "images/brown/technique1.jpg",
+          "options": ["Empi-uchi", "Nukite", "Yoko-geri"],
+          "answer": 0,
+          "explanation": "This is Empi-uchi, the elbow strike."
+        }
+      ]
+    },
+    "black": {
+      "quizzes": [
+        {
+          "question": "What does 'Dan' mean?",
+          "options": ["Black belt rank", "Beginner rank", "Teacher"],
+          "answer": 0,
+          "explanation": "'Dan' refers to black belt ranks."
+        },
+        {
+          "question": "What is a common black belt kata?",
+          "options": ["Kanku Dai", "Bassai Dai", "Heian Godan"],
+          "answer": 0,
+          "explanation": "Kanku Dai is a common black belt kata."
+        },
+        {
+          "question": "How many moves are in Kanku Dai?",
+          "options": ["65", "42", "29"],
+          "answer": 0,
+          "explanation": "Kanku Dai has 65 moves."
+        },
+        {
+          "question": "What does 'Kanku' mean?",
+          "options": ["To view the sky", "To penetrate", "Iron horse"],
+          "answer": 0,
+          "explanation": "'Kanku' means 'to view the sky'."
+        },
+        {
+          "question": "Who created Shotokan Karate?",
+          "options": ["Gichin Funakoshi", "Miyamoto Musashi", "Bruce Lee"],
+          "answer": 0,
+          "explanation": "Gichin Funakoshi founded Shotokan Karate."
+        },
+        {
+          "question": "What is the highest principle in karate?",
+          "options": ["Respect", "Power", "Speed"],
+          "answer": 0,
+          "explanation": "Respect is the highest principle in karate."
+        },
+        {
+          "question": "What stance starts Kanku Dai?",
+          "options": ["Zenkutsu-dachi", "Kiba-dachi", "Heisoku-dachi"],
+          "answer": 2,
+          "explanation": "Kanku Dai starts in Heisoku-dachi."
+        },
+        {
+          "question": "What does 'Budo' mean?",
+          "options": ["Martial way", "Fighting style", "Competition"],
+          "answer": 0,
+          "explanation": "'Budo' means 'martial way,' focusing on personal growth."
+        },
+        {
+          "question": "How many kiai points are in Kanku Dai?",
+          "options": ["2", "3", "1"],
+          "answer": 0,
+          "explanation": "Kanku Dai has 2 kiai points."
+        },
+        {
+          "question": "What kick is this?",
+          "image": "images/black/kick1.jpg",
+          "options": ["Mawashi-geri", "Yoko-geri", "Ushiro-geri"],
+          "answer": 2,
+          "explanation": "This is Ushiro-geri, the back kick."
+        }
+      ]
     }
-}
+  }

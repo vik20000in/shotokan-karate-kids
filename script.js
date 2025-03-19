@@ -1,5 +1,5 @@
-// Variables
-let karateData = null; // Will be loaded from data.json
+// Load data from JSON (assumed structure)
+let karateData = {};
 let currentBelt = "";
 let quizQuestions = [];
 let currentQuizIndex = 0;
@@ -63,6 +63,7 @@ function startQuiz() {
 
 // Load the current quiz question
 function loadQuizQuestion() {
+    speechSynthesis.cancel(); // Stop any ongoing speech
     if (currentQuizIndex >= quizQuestions.length) {
         alert("Great job, karate star! You finished the quiz! 🌟");
         backToChoice();
@@ -118,9 +119,10 @@ function selectAnswer(index, button) {
     feedback.classList.remove("hidden");
 
     if (ttsEnabled) {
-        speak(button.textContent); // Read selected answer
+        speak(button.textContent); // Speak selected answer
+        speak(feedback.textContent); // Speak feedback message
         if (index === quiz.answer && quiz.explanation) {
-            speak(quiz.explanation); // Read explanation if correct
+            speak(quiz.explanation); // Speak explanation if correct
         }
     }
 }
@@ -133,6 +135,7 @@ function nextQuestion() {
 
 // Navigation
 function backToChoice() {
+    speechSynthesis.cancel(); // Stop any ongoing speech
     showOnly(choiceSection);
 }
 
