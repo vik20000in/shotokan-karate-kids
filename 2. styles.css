@@ -1,48 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background-color: #ffe6f0;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
 
 .container {
     max-width: 600px;
-    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
 }
 
 h1 {
-    color: #2c3e50;
-    font-size: 28px;
+    color: #ff3366;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #34495e;
-    font-size: 22px;
+    color: #ff6699;
+    font-size: 24px;
 }
 
-select, button {
-    padding: 10px;
-    font-size: 16px;
+.belt-btn, .fun-btn, .lesson-btn {
+    padding: 15px;
+    font-size: 18px;
     margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button {
-    background-color: #3498db;
-    color: white;
+    border-radius: 10px;
     border: none;
+    cursor: pointer;
+    color: white;
+    width: 80%;
+    max-width: 300px;
 }
 
-button:hover {
-    background-color: #2980b9;
+.belt-btn:nth-child(1) { background-color: #cccccc; } /* White Belt */
+.belt-btn:nth-child(2) { background-color: #ffcc00; } /* Yellow Belt */
+.belt-btn:nth-child(3) { background-color: #ff6600; } /* Orange Belt */
+.fun-btn { background-color: #33cc99; }
+.lesson-btn { background-color: #ff99cc; }
+
+.belt-btn:hover, .fun-btn:hover, .lesson-btn:hover {
+    opacity: 0.9;
 }
 
 .hidden {
@@ -57,40 +61,48 @@ button:hover {
     margin: 20px 0;
 }
 
-.option {
-    display: block;
-    padding: 10px;
-    margin: 5px;
-    background-color: #ecf0f1;
-    border-radius: 5px;
+.quiz-btn {
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #66ccff;
+    color: white;
     cursor: pointer;
+    width: 80%;
+    max-width: 300px;
 }
 
-.option:hover {
-    background-color: #dcdcdc;
+.quiz-btn:hover, .quiz-btn.selected {
+    background-color: #3399ff;
+}
+
+#quiz-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
 #progress-section {
     margin-top: 20px;
-    padding: 10px;
-    background-color: #e8f1f5;
-    border-radius: 5px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
-    .container {
-        margin: 10px;
-        padding: 15px;
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    .belt-btn, .fun-btn, .lesson-btn, .quiz-btn {
+        font-size: 16px;
+        padding: 12px;
     }
-    h1 {
-        font-size: 24px;
-    }
-    h2 {
-        font-size: 18px;
-    }
-    select, button {
-        width: 100%;
-        font-size: 14px;
-    }
+    p { font-size: 16px; }
 }

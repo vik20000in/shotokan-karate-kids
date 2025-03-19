@@ -2,56 +2,65 @@
     "white": {
         "lessons": [
             {
-                "title": "Basic Stance: Zenkutsu-dachi",
-                "text": "Zenkutsu-dachi is a front stance. Stand with one leg forward and the other back, keeping your knees bent.",
-                "video": "https://www.youtube.com/embed/5A3hJnxmxMw",
-                "quiz": {
-                    "question": "Which stance has one leg forward and one leg back?",
-                    "options": ["Heiko-dachi", "Zenkutsu-dachi", "Kiba-dachi"],
-                    "answer": 1,
-                    "explanation": "Zenkutsu-dachi is a front stance with one leg forward and one back."
-                }
+                "title": "Fun Stance: Zenkutsu-dachi",
+                "text": "Zenkutsu-dachi is a cool front stance! Put one leg in front and one leg back, like a superhero ready to jump!",
+                "video": "https://www.youtube.com/embed/5A3hJnxmxMw?rel=0"
             },
             {
-                "title": "Straight Punch: Oi-zuki",
-                "text": "Oi-zuki is a straight punch. Start in Zenkutsu-dachi and punch forward with your fist.",
-                "video": "https://www.youtube.com/embed/9eG2gQ8GZ2M",
-                "quiz": {
-                    "question": "Which hand do you punch with in Oi-zuki?",
-                    "options": ["Left", "Right", "Both"],
-                    "answer": 2,
-                    "explanation": "In Oi-zuki, you can punch with either hand, but both is correct in practice."
-                }
+                "title": "Power Punch: Oi-zuki",
+                "text": "Oi-zuki is a strong punch! Stand in Zenkutsu-dachi and punch straight ahead, like hitting a target!",
+                "video": "https://www.youtube.com/embed/9eG2gQ8GZ2M?rel=0"
+            }
+        ],
+        "quizzes": [
+            {
+                "question": "What stance is this?",
+                "image": "images/zenkutsu.png",
+                "options": ["Heiko-dachi", "Zenkutsu-dachi", "Kiba-dachi"],
+                "answer": 1,
+                "explanation": "This is Zenkutsu-dachi, a front stance with one leg forward!"
+            },
+            {
+                "question": "What do you do with your fist in Oi-zuki?",
+                "options": ["Wave it", "Punch straight", "Hide it"],
+                "answer": 1,
+                "explanation": "In Oi-zuki, you punch straight ahead with power!"
             }
         ]
     },
     "yellow": {
         "lessons": [
             {
-                "title": "Front Kick: Mae-geri",
-                "text": "Mae-geri is a front kick. Lift your knee and kick straight ahead with the ball of your foot.",
-                "video": "https://www.youtube.com/embed/6XJ2cCdkzWI",
-                "quiz": {
-                    "question": "What does 'Mae-geri' mean?",
-                    "options": ["Side kick", "Front kick", "Roundhouse kick"],
-                    "answer": 1,
-                    "explanation": "'Mae-geri' means front kick in Japanese."
-                }
+                "title": "Super Kick: Mae-geri",
+                "text": "Mae-geri is a front kick! Lift your knee up high and kick straight with the ball of your foot, like kicking a ball!",
+                "video": "https://www.youtube.com/embed/6XJ2cCdkzWI?rel=0"
+            }
+        ],
+        "quizzes": [
+            {
+                "question": "Which kick is shown here?",
+                "image": "images/maegeri.png",
+                "options": ["Side Kick", "Front Kick (Mae-geri)", "Roundhouse Kick"],
+                "answer": 1,
+                "explanation": "This is Mae-geri, a super front kick!"
             }
         ]
     },
     "orange": {
         "lessons": [
             {
-                "title": "Knife-Hand Block: Shuto-uke",
-                "text": "Shuto-uke is a knife-hand block. Use the side of your hand to block an attack.",
-                "video": "https://www.youtube.com/embed/8xKzP2ZkoXY",
-                "quiz": {
-                    "question": "Which block uses an open hand?",
-                    "options": ["Age-uke", "Soto-uke", "Shuto-uke"],
-                    "answer": 2,
-                    "explanation": "Shuto-uke uses an open hand to block."
-                }
+                "title": "Ninja Block: Shuto-uke",
+                "text": "Shuto-uke is a ninja block with your hand! Use the side of your hand to stop an attack, like a shield!",
+                "video": "https://www.youtube.com/embed/8xKzP2ZkoXY?rel=0"
+            }
+        ],
+        "quizzes": [
+            {
+                "question": "What block is this?",
+                "image": "images/shutouke.png",
+                "options": ["Age-uke", "Soto-uke", "Shuto-uke"],
+                "answer": 2,
+                "explanation": "This is Shuto-uke, a ninja block with the side of your hand!"
             }
         ]
     }
