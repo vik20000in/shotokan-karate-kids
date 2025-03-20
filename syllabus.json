@@ -1,0 +1,58 @@
+{
+    "white": {
+        "syllabus": [
+            "Basic punches",
+            "Basic kicks",
+            "Heian Shodan kata"
+        ]
+    },
+    "yellow": {
+        "syllabus": [
+            "Heian Nidan kata",
+            "Knife-hand block",
+            "Roundhouse kick"
+        ]
+    },
+    "orange": {
+        "syllabus": [
+            "Heian Sandan kata",
+            "Side kick",
+            "Upper block"
+        ]
+    },
+    "green": {
+        "syllabus": [
+            "Heian Yondan kata",
+            "Spear-hand strike",
+            "Bunkai"
+        ]
+    },
+    "blue": {
+        "syllabus": [
+            "Heian Godan kata",
+            "Backfist strike",
+            "Inside block"
+        ]
+    },
+    "purple": {
+        "syllabus": [
+            "Tekki Shodan kata",
+            "Hammerfist strike",
+            "Meditation"
+        ]
+    },
+    "brown": {
+        "syllabus": [
+            "Bassai Dai kata",
+            "Elbow strike",
+            "Preparation for black belt"
+        ]
+    },
+    "black": {
+        "syllabus": [
+            "Kanku Dai kata",
+            "Highest principles",
+            "Advanced techniques"
+        ]
+    }
+}

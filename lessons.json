@@ -1,0 +1,41 @@
+{
+    "white": {
+        "lessons": [
+            {
+                "title": "Basic Punches",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/example1"
+            },
+            {
+                "title": "Basic Kicks",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/example2"
+            },
+            {
+                "title": "Heian Shodan Kata",
+                "type": "image",
+                "url": "images/white/heian_shodan.jpg"
+            }
+        ]
+    },
+    "yellow": {
+        "lessons": [
+            {
+                "title": "Heian Nidan Kata",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/example3"
+            },
+            {
+                "title": "Knife-hand Block",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/QwAWYNsAbF0"
+            },
+            {
+                "title": "Roundhouse Kick",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/example4"
+            }
+        ]
+    }
+    
+}

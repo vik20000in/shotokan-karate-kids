@@ -4,12 +4,16 @@ let currentBelt = "";
 let quizQuestions = [];
 let currentQuizIndex = 0;
 let stars = JSON.parse(localStorage.getItem("stars")) || [];
+let currentLessonIndex = 0;
+let lessons = [];
 
 // Sections
 const beltSection = document.getElementById("belt-section");
 const choiceSection = document.getElementById("choice-section");
 const quizSection = document.getElementById("quiz-section");
 const progressSection = document.getElementById("progress-section");
+const syllabusSection = document.getElementById("syllabus-section");
+const lessonsSection = document.getElementById("lessons-section");
 
 // TTS controls
 const ttsOn = document.getElementById("tts-on");
@@ -48,9 +52,12 @@ function populateBeltDropdown() {
 
 // Show only the specified section, hide others
 function showOnly(section) {
-    [beltSection, choiceSection, quizSection].forEach(s => {
-        s.classList.toggle("hidden", s !== section);
-    });
+    document.getElementById('belt-section').classList.add('hidden');
+    document.getElementById('choice-section').classList.add('hidden');
+    document.getElementById('quiz-section').classList.add('hidden');
+    document.getElementById('syllabus-section').classList.add('hidden');
+    document.getElementById('lessons-section').classList.add('hidden');
+    section.classList.remove('hidden');
     progressSection.classList.remove("hidden"); // Always show progress
 }
 
@@ -186,3 +193,100 @@ function speak(text) {
 // TTS toggle listener
 ttsOn.addEventListener('change', () => { ttsEnabled = true; });
 ttsOff.addEventListener('change', () => { ttsEnabled = false; });
+
+function showSyllabus() {
+    const belt = currentBelt;
+    if (!belt) {
+        alert('Please select a belt first.');
+        return;
+    }
+    fetch('syllabus.json')
+        .then(response => response.json())
+        .then(data => {
+            const syllabus = data[belt].syllabus;
+            const syllabusList = document.getElementById('syllabus-list');
+            syllabusList.innerHTML = '';
+            syllabus.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                syllabusList.appendChild(li);
+            });
+            showOnly(syllabusSection);
+        })
+        .catch(error => console.error('Error loading syllabus:', error));
+}
+
+// Show lessons list and handle lesson selection
+function showLessons() {
+    const belt = currentBelt;
+    if (!belt) {
+        alert('Please select a belt first.');
+        return;
+    }
+    fetch('lessons.json')
+        .then(response => response.json())
+        .then(data => {
+            lessons = data[belt].lessons;
+            const lessonsList = document.getElementById('lessons-list');
+            lessonsList.innerHTML = '';
+            lessons.forEach((lesson, index) => {
+                const lessonItem = document.createElement('div');
+                lessonItem.classList.add('lesson-item');
+                lessonItem.textContent = lesson.title;
+                lessonItem.onclick = () => selectLesson(index);
+                lessonsList.appendChild(lessonItem);
+            });
+            showOnly(lessonsSection);
+        })
+        .catch(error => console.error('Error loading lessons:', error));
+}
+
+// Select a lesson to view
+function selectLesson(index) {
+    currentLessonIndex = index;
+    displayLesson();
+}
+
+// Display the current lesson
+function displayLesson() {
+    const lesson = lessons[currentLessonIndex];
+    const lessonTitle = document.getElementById('lesson-title');
+    const lessonMedia = document.getElementById('lesson-media');
+    lessonTitle.textContent = lesson.title;
+    lessonMedia.innerHTML = '';
+
+    if (lesson.type === 'video') {
+        const iframe = document.createElement('iframe');
+        iframe.src = lesson.url;
+        iframe.width = '560';
+        iframe.height = '315';
+        iframe.frameBorder = '0';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        lessonMedia.appendChild(iframe);
+    } else if (lesson.type === 'image') {
+        const img = document.createElement('img');
+        img.src = lesson.url;
+        img.alt = lesson.title;
+        lessonMedia.appendChild(img);
+    }
+
+    document.getElementById('lessons-list').classList.add('hidden');
+    document.getElementById('lesson-content').classList.remove('hidden');
+}
+
+// Navigate to the previous lesson
+function prevLesson() {
+    if (currentLessonIndex > 0) {
+        currentLessonIndex--;
+        displayLesson();
+    }
+}
+
+// Navigate to the next lesson
+function nextLesson() {
+    if (currentLessonIndex < lessons.length - 1) {
+        currentLessonIndex++;
+        displayLesson();
+    }
+}

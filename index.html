@@ -18,7 +18,27 @@
     <div id="choice-section" class="hidden">
         <h2 id="belt-title">Belt Fun</h2>
         <button class="fun-btn" onclick="startQuiz()">Take the Quiz! 🧠</button>
+        <button class="fun-btn" onclick="showSyllabus()">View Syllabus 📚</button>
+        <button class="fun-btn" onclick="showLessons()">Take Lessons 🎥</button>
         <button class="fun-btn" onclick="showOnly(beltSection)">Back to Belts</button>
+    </div>
+
+    <div id="syllabus-section" class="hidden">
+        <h2 id="syllabus-title">Syllabus</h2>
+        <ul id="syllabus-list"></ul>
+        <button class="fun-btn" onclick="backToChoice()">Back to Options</button>
+    </div>
+
+    <div id="lessons-section" class="hidden">
+        <h2 id="lessons-title">Lessons</h2>
+        <div id="lessons-list"></div>
+        <div id="lesson-content" class="hidden">
+            <h3 id="lesson-title"></h3>
+            <div id="lesson-media"></div>
+            <button class="fun-btn" onclick="prevLesson()">Previous Lesson</button>
+            <button class="fun-btn" onclick="nextLesson()">Next Lesson</button>
+        </div>
+        <button class="fun-btn" onclick="backToChoice()">Back to Options</button>
     </div>
 
     <div id="quiz-section" class="hidden">
@@ -41,5 +61,9 @@
     </div>
 
     <script src="script.js"></script>
+    
+    <footer>
+        <p>&copy; 2025 Shotokan Karate Kids. All rights reserved.</p>
+    </footer>
 </body>
 </html>
