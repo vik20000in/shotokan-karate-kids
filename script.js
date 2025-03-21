@@ -237,6 +237,8 @@ function showLessons() {
                 lessonsList.appendChild(lessonItem);
             });
             showOnly(lessonsSection);
+            document.getElementById('lesson-content').classList.add('hidden');
+            lessonsList.classList.remove('hidden');
         })
         .catch(error => console.error('Error loading lessons:', error));
 }
@@ -258,11 +260,6 @@ function displayLesson() {
     if (lesson.type === 'video') {
         const iframe = document.createElement('iframe');
         iframe.src = lesson.url;
-        iframe.width = '560';
-        iframe.height = '315';
-        iframe.frameBorder = '0';
-        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-        iframe.allowFullscreen = true;
         lessonMedia.appendChild(iframe);
     } else if (lesson.type === 'image') {
         const img = document.createElement('img');
@@ -289,4 +286,10 @@ function nextLesson() {
         currentLessonIndex++;
         displayLesson();
     }
+}
+
+// Show the list of lessons
+function backToLessons() {
+    document.getElementById('lesson-content').classList.add('hidden');
+    document.getElementById('lessons-list').classList.remove('hidden');
 }

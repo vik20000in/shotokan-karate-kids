@@ -4,17 +4,17 @@
             {
                 "title": "Basic Punches",
                 "type": "video",
-                "url": "https://www.youtube.com/embed/example1"
+                "url": "https://www.youtube.com/embed/WBc8wkfJEao"
             },
             {
                 "title": "Basic Kicks",
                 "type": "video",
-                "url": "https://www.youtube.com/embed/example2"
+                "url": "https://www.youtube.com/embed/NAn6DocT120"
             },
             {
                 "title": "Heian Shodan Kata",
-                "type": "image",
-                "url": "images/white/heian_shodan.jpg"
+                  "type": "video",
+                "url": "https://www.youtube.com/embed/9D2yOzDsW8k"
             }
         ]
     },
@@ -33,9 +33,122 @@
             {
                 "title": "Roundhouse Kick",
                 "type": "video",
-                "url": "https://www.youtube.com/embed/example4"
+                "url": "https://www.youtube.com/embed/C8laWd_vgjg"
+            }
+        ]
+    },
+    "orange": {
+        "lessons": [
+            {
+                "title": "Heian Sandan Kata",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/8OI-FTV3-4o"
+            },
+            {
+                "title": "Side Kick",
+                "type": "image",
+                "url": "images/orange/side_kick.jpg"
+            },
+            {
+                "title": "Upper Block",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/bNjgeoPfQFk"
+            }
+        ]
+    },
+    "green": {
+        "lessons": [
+            {
+                "title": "Heian Yondan Kata",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/examHrAiTCcatbYple7"
+            },
+            {
+                "title": "Spear-hand Strike",
+                "type": "image",
+                "url": "images/green/spear_hand_strike.jpg"
+            },
+            {
+                "title": "Bunkai",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/f75xVC5JYKU"
+            }
+        ]
+    },
+    "blue": {
+        "lessons": [
+            {
+                "title": "Heian Godan Kata",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/dBFe54glhTs"
+            },
+            {
+                "title": "Backfist Strike",
+                "type": "image",
+                "url": "images/blue/backfist_strike.jpg"
+            },
+            {
+                "title": "Inside Block",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/YLNy5N_XVQA"
+            }
+        ]
+    },
+    "purple": {
+        "lessons": [
+            {
+                "title": "Tekki Shodan Kata",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/VAkA5zAosC4"
+            },
+            {
+                "title": "Hammerfist Strike",
+                "type": "image",
+                "url": "images/purple/hammerfist_strike.jpg"
+            },
+            {
+                "title": "Meditation",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/PIVYGdPw6hE"
+            }
+        ]
+    },
+    "brown": {
+        "lessons": [
+            {
+                "title": "Bassai Dai Kata",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/tXPZFarJMh0"
+            },
+            {
+                "title": "Elbow Strike",
+                "type": "image",
+                "url": "images/brown/elbow_strike.jpg"
+            },
+            {
+                "title": "Preparation for Black Belt",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/x2pk_6icGtI"
+            }
+        ]
+    },
+    "black": {
+        "lessons": [
+            {
+                "title": "Kanku Dai Kata",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/Jkv8Ks_fEqk"
+            },
+            {
+                "title": "Highest Principles",
+                "type": "image",
+                "url": "images/black/highest_principles.jpg"
+            },
+            {
+                "title": "Advanced Techniques",
+                "type": "video",
+                "url": "https://www.youtube.com/embed/x2pk_6icGtI"
             }
         ]
     }
-    
 }
