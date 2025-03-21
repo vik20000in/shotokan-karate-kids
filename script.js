@@ -230,8 +230,8 @@ function showLessons() {
             const lessonsList = document.getElementById('lessons-list');
             lessonsList.innerHTML = '';
             lessons.forEach((lesson, index) => {
-                const lessonItem = document.createElement('div');
-                lessonItem.classList.add('lesson-item');
+                const lessonItem = document.createElement('button');
+                lessonItem.classList.add('fun-btn');
                 lessonItem.textContent = lesson.title;
                 lessonItem.onclick = () => selectLesson(index);
                 lessonsList.appendChild(lessonItem);

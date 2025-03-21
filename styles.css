@@ -1,7 +1,9 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
     padding: 20px;
 }
 
@@ -9,18 +11,20 @@ body {
     display: none;
 }
 
-.fun-btn {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    background-color: #ffcc00;
+button.fun-btn {
+    background-color: #ff4500;
+    color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.fun-btn:hover {
-    background-color: #ff9900;
+button.fun-btn:hover {
+    background-color: #ff6347;
 }
 
 .quiz-btn {
@@ -50,6 +54,10 @@ body {
     margin: 5px;
 }
 
+h1, h2, h3 {
+    color: #ff4500;
+}
+
 #feedback {
     margin: 10px;
     font-size: 18px;
@@ -72,6 +80,16 @@ body {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+#belt-section, #choice-section, #syllabus-section, #lessons-section, #quiz-section {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 #belt-dropdown {
@@ -89,6 +107,32 @@ body {
 }
 
 #quiz-image {
-    max-width: 300px;
-    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Karate theme */
+body::before {
+    content: '🥋';
+    font-size: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.1;
+}
+
+body::after {
+    content: '🥋';
+    font-size: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.1;
 }
