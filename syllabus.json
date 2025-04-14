@@ -1,58 +1,205 @@
 {
-    "white": {
-        "syllabus": [
-            "Basic punches",
-            "Basic kicks",
-            "Heian Shodan kata"
-        ]
-    },
     "yellow": {
         "syllabus": [
-            "Heian Nidan kata",
-            "Knife-hand block",
-            "Roundhouse kick"
+            "Move Forward in Zenkutsu dachi Oi-tsuki chudan Mawate & Back",
+            "Move Forward in Zenkutsu dachi Age-uke Mawate & Back",
+            "Move Forward in Z. D. Soto ude uke Mawate & Back",
+            "Move Forward in Z.D. Maegeri Mawate & Back",
+            "Move Forward in Kiba dachi Yoko geri keage Mawate & Back"
+        ],
+        "kata": [
+            "Heian Shodan"
+        ],
+        "kumite": [
+            "Kumite 1: Zenkutsu-dachi Oi-tsuki Jodan (5 times)",
+            "Move back Zenkutsu-dachi Age-uke, Gyaku-tsuki"
         ]
     },
     "orange": {
         "syllabus": [
-            "Heian Sandan kata",
-            "Side kick",
-            "Upper block"
+            "Move Forward in Z D Oi-tsuki chudan Mawate & Back",
+            "Move Forward in Z D Gyaku-tsuki Chudan Mawate & Back",
+            "Move Forward in Z D Age-uke Mawate & Back",
+            "Move Forward in Z D Soto ude uke Mawate & Back",
+            "Move Forward in Z D Uchi ude uke Mawate & Back",   
+            "Move Forward in Z D Mae geri Mawate & Back",
+            "Move Forward in Z D Kiba dachi Yoko geri Keage Mawate & Back"
+        ],
+        "kata": [
+            "Heian Shodan"
+        ],
+        "kumite": [
+            "Gohon Kumite",
+            "Z D Oitsuki Jodan ----- Age uke (Gyaku tsuki)",
+            "Z D Oitsuki chudan ----- Soto ude uke ( Gyakutsuki)"
+        ]
+    },
+    "Blue": {
+        "syllabus": [
+            "Move Forward in Z D Oi-tsuki chudan Mawate & Back",
+            "Move Forward in Z D Gyaku-tsuki ChudanMove Backward Age uke",
+            "3. Move Forward Z D Soto ude uke ---- Move Backward Z D Uchi ude uke",
+            "Move Forward Kokutsu dachi Shuto uke Mawate & Back",
+            "Move Forward Z D Maegeri Mawate & Back",   
+            "Move Forward Z D Mawashi geri Mawate & Back",
+            "Move Forward Kiba dachi Yoko geri Keage Mawate & Back"
+        ],
+        "kata": [
+            "Heian Nidan"
+        ],
+        "kumite": [
+            "Gohon Kumite – Oitsuki Jodan",
+            "Gohon Kumite – Oitsuki chudan",    
+            "Sanbon Kumite (No.1)"
         ]
     },
     "green": {
         "syllabus": [
-            "Heian Yondan kata",
-            "Spear-hand strike",
-            "Bunkai"
-        ]
-    },
-    "blue": {
-        "syllabus": [
-            "Heian Godan kata",
-            "Backfist strike",
-            "Inside block"
+            "Move Forward Z D Oitsuki chudan ---- Move Back Z D Oitsuki chudan",
+            "Move Forward Z D Gyakutsuki chudan ---- Move Back Z D Gyakutsuki chudan",
+            "Move Forward Z D Soto ude uke & Gyaku tsuki ---- Move Back Z D Soto ude uke & Gyaku tsuki",
+            "Move Forward Kokutsudachi Shuto uke ---- Move Back Shuto uke",
+            "Move Forward Kiba dachi Yokogeri Keage Mawate & Back",
+            "Move Forward m Kiba dachi Yoko geri kekomi Mawate & Back"
+
+        ],
+        "kata": [
+            "Any one Kata Below Heian Sandan (Examiner’s choice)",
+            "Heian Sandan"
+        ],
+        "kumite": [
+            "Sanbon Kumite (No 1)",
+            "Sanbon Kumite (No 2)", 
+            "Sanbon Kumite (No 3)"
         ]
     },
     "purple": {
         "syllabus": [
-            "Tekki Shodan kata",
-            "Hammerfist strike",
-            "Meditation"
+            "Move Forward Z D Sanbon tsuki ---- Move back Age uke & Gyakutsuki",
+            "Move Forward Z D Soto ude uke Kiba dachi Enpi ---- Move back uchi ude uke & gyakutsuki",
+            "Move Forward Kokutsu dachi Shuto uke & nukite ---- Mawate & Back",
+            "Move forward Mae-mae geri & Maegeri in Z D ----- Mawate & Back",
+            "Move Forward Mae-maegeri & Mawashigeri in Z Dc ----- Mawate & Back",
+            "Move Forward in Kiba dachi Yoko geri Keage ----- Mawate & Back",
+            "Move Forward in kiba dachi Yoko geri Kekomi ---- Mawate & Back"
+        ],
+        "kata": [
+            "Any Kata below Heian Yondan (examiner’s choice)",
+            "Heian Yondan"
+        ],
+        "kumite": [
+            "Sanbon Kumite (Any one – examiner’s choice)",
+            "Kihon Ippon Kumite ( Oitsuki Jodan & Chudan – 2 each)"
         ]
     },
-    "brown": {
+    "Purple White Belt": {
         "syllabus": [
-            "Bassai Dai kata",
-            "Elbow strike",
-            "Preparation for black belt"
+            "Move Forward Z D Sanbon tsuki ---- Move back Age uke & Gyaku tsuki",
+            "Move Forward Z D Soto ude uke , Kibadachi Enpi & Urakan ---- Move back Uchi ude uke, Kizami tsuki & Gyakutsuki",
+            "Move forward Kokutsu dachi Shuto uke & nukite ----Mave back Kokutsudachi Shuto uke & nukite",
+            "Move Forward Mae maegeri & Maegeri in Z D ----Mawate & Back",
+            "Move Forward Maemawashigeri & Mawashigeri in Z D ----Mawate & back",
+            "Move Forward in Kiba dachi Yoko geri Keage ---- Mawate & Back",
+            "Move Forward in Kiba dachi Yokogeri Kekomi ----Mawate & Back"
+        ],
+        "kata": [
+            "Any kata Below Heian Godan ( Examiner’s choice)",
+            "Heian Godan"
+        ],
+        "kumite": [
+            "Sanbon Kumite (Any one- Examiner’s choice)",
+            "Kihon Ippon Kumite - 2 times each (1.Oitsuki Jodan ; 2.Chudan; 3. Maegeri; 4.Mawashigeri)"
+        ]
+    },
+    "Brown 3rd Kyu": {
+        "syllabus": [
+            "Move Forward Z D Sanbon tsuki ---- Move back Age uke & Gyakutsuki",
+            "Move Forward ZD Soto ude uke, Kokutsudachi uchi ude uke & Gyakutsuki ----Move back Kokutsu uchi ude uke & Gyaku tsuki chudan",
+            "Move Forward Kokutsu shuto uke, mae-maegeri & nukite ----Mawate & Back",
+            "Move Forward mae-maegeri & maegeri in Z D ----Mawate & back",
+            "Move Forward Z D maegeri & mawashigeri (same leg) ----Mawate & back",
+            "Move Forward in Z D ushiro geri ---- Mawate & back",
+            "Move Forward in Kiba dachi Yokogeri keage ---- Mawate & back",
+            "Move Forward in kiba dachi Yoko geri kekomi ---- Mawate & back"
+        ],
+        "kata": [
+            "Sheitei Kata – below Tekki Shodan ( Examiner’s choice)",
+            "Tekki Shodan"
+        ],
+        "kumite": [
+            "Sanbon kumite – (Any one – examiner’s choice)",
+            "Kihon Ippon Kumite- 2 each-1.oitsuji jodan;2.oitsuki chudan;3.maegeri; 4.yokoge geri; 5.mawashi geri",
+            "Jiyu Ippon Kumite- 1 each- 1.Kizami tsuki jodan;2.Gyakutsuki chudan"
+        ]
+    },  
+    "Brown 2nd Kyu": {
+        "syllabus": [
+            "Move Forward Z D Sanbon tsuki ---- Move back Age uke & Gyaku tsuki",
+            "Move Forward Z D Soto ude uke, kokutsu uchi ude uke & Gyaku tsuki ----Move back Z D uchi ude uke,kizami tsuki jodan & Gyaki tsuki",
+            "Move Forward Z D Age uke & Soto uchi ----Move back same ",
+            "Move Forward Kokutsu D shuto uke, mae-maegeri & nukite  ----Move back same",
+            "Move Forward mae-maegeri & maegeri ----Move back mae-m aegeri & yoko geri kekomi",
+            "Move Forward mae-mawashigeri & mawashigeri ---- Move back Ushiro geri ",
+            "Move Forward Kibadachi Yokogeri keage & kekomi ----Mawate & back ",
+            "Jiyu Kamae; Yoriashi Kizamitsuki jodan & Gyakutsuki chudan ----  Yori ashi Urakan & Gyaku tsuki",
+            "Maegeri (front); Yoko geri kekomi (side); Mawashigeri (front) ---- Change leg & repeat (2 time s each)"
+        ],
+        "kata": [
+            "Any Heian Kata (Examiner’s choice)",
+            "Tekki Shodan",
+            "Jion or Basai Dai"
+        ],
+        "kumite": [
+            "Sanbon Kumite (Examiner’s choice)",
+            "Kihon Ippon Kumite - 2 times each (1.Oitsuki Jodan ; 2.Chudan; 3. Maegeri; 4.Mawashigeri)",
+            "Jiyu Ippon Kumite – 1 each- a)Kizami tsuki Jodan; b)Oitsuki Jodan; c)Gyaku tsuki; d)iotsuki chudan."
+        ]
+    },
+    "brown 1st Kyu": {
+        "syllabus": [
+            "Move Forward Z D Sanbontsuki ---- Move back Age uke & gyaku tsuki",
+            "Move forward Z D Soto ude uke, K D Enpi, urakan & ZD Soto uchi ---- Move back Z D uchi ude uke & Gyaku tsuki",
+            "Move Forward Kokutsu Dachi shuto uke, mae-maegeri & nukite ---- Move back same",
+            "Mae-maegeri, maegeri, yoko geri kekomi, mawashigeri, ushiro geri, Ageuke & Gyaku tsuki (4 steps) ----  Mawate & Back",
+            "Jiyu kamae; Gyakutsuki, maegeri & jodan tsuki (Mawate) ---- Gyakutsuki, mawashigeri &Gyaku tsuki",
+            "Jiyu kamae: Urakan, Gyakutsuki, mawashigeri & gyaku tsuki ---- Move back uchi ude uke, maegeri(take the leg back) &gyakutsuki",
+            "Maegeri (front); Yokogeri kekomi(side); ushiro geri(back);mawashigeri Change the leg & repeat (2 times each)"
+
+        ],
+        "kata": [
+            "Any Heian kata or Tekki Shodan (examiner’s choice)",
+            "Kangudai",
+            "Jion"
+        ],
+        "kumite": [
+            "Kumite 7: Zenkutsu-dachi Ren-tsuki, Gyaku-tsuki",
+            "Move back Zenkutsu-dachi Kake-uke, Gyaku-tsuki"
         ]
     },
     "black": {
         "syllabus": [
-            "Kanku Dai kata",
-            "Highest principles",
-            "Advanced techniques"
+           "M F in ZD Sanbon tsuki ---- M B in ZD Age uke Maegeri Gyakutsuki",
+            "MF in ZD Soto ude uke –KD Enpi, urakan- ZD Gyaku tsuki ---- MB in ZD uchi ude uke – kizamitsuki- Gyakutsuki",
+            "Kokutsu Shuto uke – ZD nukite",
+            "ZD Age uke- soto uchi",
+            "ZD Maegeri Oitsuki chudan ---- ZD Mageri Gyakutsuki chudan",
+            "ZD Mae mawashigeri, mawashigeri –age uke gyakutsuki ZD Maemawashigeri, Yokogeri kekomi –age uke, gyakutsuki",
+            "ZD Oitsuki, gyakutsuki MB uchi ude uke Yoriashi Gyakutsuki Maegeri age uke Gyakutsuki",
+            "ZD Maegeri,mawashigeri, ushiro geri Age uke gyaku tsuki ZD Maegeri, Yokogeri kekomi, ushiro geri, age uke Gyakutsuki",
+            "MB in ZD, Maegeri(take the leg back) MB Kokutsu Shuto uke Mae mawashigeri , gyakutsuki",
+            "O Maegeri-Yokogeri kekomi-Ushiro geri- Mawashi geri (3 each)"
+
+        ],
+        "kata": [
+            "Any Heian kata or Tekki Shodan (examiner’s choice)",
+            "Kangu Dai",
+            "Jion, Basai Dai, Enpi (One Kata – Examiners choice)"
+        ],
+        "kumite": [
+            "Any Sanbon Kumite (examiner’s choice)",
+            "Kihon Ippon Kumite- 2 each- a)Oitsuki Jodan; b)Oitsuki chudan; c)maegeri d)Yoko geri kekomi; e)mawashigeri; f) ushirogeri",
+            "Jiyu Ippon Kumite – 2 each- a)Kizami tsuki Jodan; b)Oitsuki Jodan; c)Gyaku tsuki; d)iotsuki chudan;e)maegeri; f)Yoko geri kekomi;g)mawashigeri;h)Ushiro geri",
+            "Jiyu Kumite as per WKF Rule"
         ]
     }
 }

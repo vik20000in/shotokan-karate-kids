@@ -200,7 +200,7 @@
         }
       ]
     },
-    "green": {
+    "Blue": {
       "quizzes": [
         {
           "question": "What is the fourth Heian kata?",
@@ -265,7 +265,7 @@
         }
       ]
     },
-    "blue": {
+    "green": {
       "quizzes": [
         {
           "question": "What is the fifth Heian kata?",
@@ -395,7 +395,267 @@
         }
       ]
     },
-    "brown": {
+    "purple White Belt": {
+      "quizzes": [
+        {
+          "question": "What is the first Tekki kata?",
+          "options": ["Tekki Shodan", "Tekki Nidan", "Tekki Sandan"],
+          "answer": 0,
+          "explanation": "Tekki Shodan is the first Tekki kata."
+        },
+        {
+          "question": "What stance is mostly used in Tekki Shodan?",
+          "options": ["Kiba-dachi", "Zenkutsu-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "Kiba-dachi is the main stance in Tekki Shodan."
+        },
+        {
+          "question": "What does 'Shodan' mean?",
+          "options": ["First level", "Second level", "Third level"],
+          "answer": 0,
+          "explanation": "'Shodan' means 'first level'."
+        },
+        {
+          "question": "How many moves are in Tekki Shodan?",
+          "options": ["29", "23", "27"],
+          "answer": 0,
+          "explanation": "Tekki Shodan has 29 moves."
+        },
+        {
+          "question": "What is the name of the hammerfist strike?",
+          "options": ["Tetsui", "Uraken", "Nukite"],
+          "answer": 0,
+          "explanation": "Tetsui is the hammerfist strike."
+        },
+        {
+          "question": "What does 'Kata' mean?",
+          "options": ["Form", "Fight", "Dance"],
+          "answer": 0,
+          "explanation": "Kata means 'form,' a sequence of movements."
+        },
+        {
+          "question": "What is the purpose of Tekki katas?",
+          "options": ["Side-to-side fighting", "Long-range fighting", "Jumping techniques"],
+          "answer": 0,
+          "explanation": "Tekki katas focus on side-to-side fighting."
+        },
+        {
+          "question": "How do you say 'meditation' in Japanese?",
+          "options": ["Mokuso", "Hajime", "Yame"],
+          "answer": 0,
+          "explanation": "'Mokuso' means meditation."
+        },
+        {
+          "question": "What block follows the first move in Tekki Shodan?",
+          "options": ["Uchi-uke", "Soto-uke", "Gedan-barai"],
+          "answer": 0,
+          "explanation": "The second move is Uchi-uke."
+        },
+        {
+          "question": "What stance is this?",
+          "image": "images/purple/stance1.jpg",
+          "options": ["Kiba-dachi", "Zenkutsu-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "This is Kiba-dachi, used in Tekki Shodan."
+        }
+      ]
+    },
+    "Brown 3rd Kyu": {
+      "quizzes": [
+        {
+          "question": "What is a common kata for brown belt?",
+          "options": ["Bassai Dai", "Heian Godan", "Tekki Shodan"],
+          "answer": 0,
+          "explanation": "Bassai Dai is often learned at brown belt."
+        },
+        {
+          "question": "What does 'Bassai' mean?",
+          "options": ["To penetrate a fortress", "Iron horse", "Peaceful mind"],
+          "answer": 0,
+          "explanation": "'Bassai' means 'to penetrate a fortress'."
+        },
+        {
+          "question": "How many moves are in Bassai Dai?",
+          "options": ["42", "29", "23"],
+          "answer": 0,
+          "explanation": "Bassai Dai has 42 moves."
+        },
+        {
+          "question": "What stance starts Bassai Dai?",
+          "options": ["Zenkutsu-dachi", "Kiba-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "Bassai Dai starts in Zenkutsu-dachi."
+        },
+        {
+          "question": "What is the name of the elbow strike?",
+          "options": ["Empi-uchi", "Tetsui", "Uraken"],
+          "answer": 0,
+          "explanation": "Empi-uchi is the elbow strike."
+        },
+        {
+          "question": "What does 'Dai' mean in Bassai Dai?",
+          "options": ["Major", "Minor", "First"],
+          "answer": 0,
+          "explanation": "'Dai' means 'major' or 'greater'."
+        },
+        {
+          "question": "What is the purpose of brown belt training?",
+          "options": ["Prepare for black belt", "Learn basics", "Practice katas only"],
+          "answer": 0,
+          "explanation": "Brown belt prepares you for black belt."
+        },
+        {
+          "question": "How many kiai points are in Bassai Dai?",
+          "options": ["2", "1", "3"],
+          "answer": 0,
+          "explanation": "Bassai Dai has 2 kiai points."
+        },
+        {
+          "question": "What does 'Kyū' mean?",
+          "options": ["Grade below black", "Black belt rank", "Teacher"],
+          "answer": 0,
+          "explanation": "'Kyū' refers to ranks below black belt."
+        },
+        {
+          "question": "What technique is this?",
+          "image": "images/brown/technique1.jpg",
+          "options": ["Empi-uchi", "Nukite", "Yoko-geri"],
+          "answer": 0,
+          "explanation": "This is Empi-uchi, the elbow strike."
+        }
+      ]
+    },
+    "Brown 2nd Kyu": {
+      "quizzes": [
+        {
+          "question": "What is a common kata for brown belt?",
+          "options": ["Bassai Dai", "Heian Godan", "Tekki Shodan"],
+          "answer": 0,
+          "explanation": "Bassai Dai is often learned at brown belt."
+        },
+        {
+          "question": "What does 'Bassai' mean?",
+          "options": ["To penetrate a fortress", "Iron horse", "Peaceful mind"],
+          "answer": 0,
+          "explanation": "'Bassai' means 'to penetrate a fortress'."
+        },
+        {
+          "question": "How many moves are in Bassai Dai?",
+          "options": ["42", "29", "23"],
+          "answer": 0,
+          "explanation": "Bassai Dai has 42 moves."
+        },
+        {
+          "question": "What stance starts Bassai Dai?",
+          "options": ["Zenkutsu-dachi", "Kiba-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "Bassai Dai starts in Zenkutsu-dachi."
+        },
+        {
+          "question": "What is the name of the elbow strike?",
+          "options": ["Empi-uchi", "Tetsui", "Uraken"],
+          "answer": 0,
+          "explanation": "Empi-uchi is the elbow strike."
+        },
+        {
+          "question": "What does 'Dai' mean in Bassai Dai?",
+          "options": ["Major", "Minor", "First"],
+          "answer": 0,
+          "explanation": "'Dai' means 'major' or 'greater'."
+        },
+        {
+          "question": "What is the purpose of brown belt training?",
+          "options": ["Prepare for black belt", "Learn basics", "Practice katas only"],
+          "answer": 0,
+          "explanation": "Brown belt prepares you for black belt."
+        },
+        {
+          "question": "How many kiai points are in Bassai Dai?",
+          "options": ["2", "1", "3"],
+          "answer": 0,
+          "explanation": "Bassai Dai has 2 kiai points."
+        },
+        {
+          "question": "What does 'Kyū' mean?",
+          "options": ["Grade below black", "Black belt rank", "Teacher"],
+          "answer": 0,
+          "explanation": "'Kyū' refers to ranks below black belt."
+        },
+        {
+          "question": "What technique is this?",
+          "image": "images/brown/technique1.jpg",
+          "options": ["Empi-uchi", "Nukite", "Yoko-geri"],
+          "answer": 0,
+          "explanation": "This is Empi-uchi, the elbow strike."
+        }
+      ]
+    },
+    "Brown 1st Kyu": {
+      "quizzes": [
+        {
+          "question": "What is a common kata for brown belt?",
+          "options": ["Bassai Dai", "Heian Godan", "Tekki Shodan"],
+          "answer": 0,
+          "explanation": "Bassai Dai is often learned at brown belt."
+        },
+        {
+          "question": "What does 'Bassai' mean?",
+          "options": ["To penetrate a fortress", "Iron horse", "Peaceful mind"],
+          "answer": 0,
+          "explanation": "'Bassai' means 'to penetrate a fortress'."
+        },
+        {
+          "question": "How many moves are in Bassai Dai?",
+          "options": ["42", "29", "23"],
+          "answer": 0,
+          "explanation": "Bassai Dai has 42 moves."
+        },
+        {
+          "question": "What stance starts Bassai Dai?",
+          "options": ["Zenkutsu-dachi", "Kiba-dachi", "Kokutsu-dachi"],
+          "answer": 0,
+          "explanation": "Bassai Dai starts in Zenkutsu-dachi."
+        },
+        {
+          "question": "What is the name of the elbow strike?",
+          "options": ["Empi-uchi", "Tetsui", "Uraken"],
+          "answer": 0,
+          "explanation": "Empi-uchi is the elbow strike."
+        },
+        {
+          "question": "What does 'Dai' mean in Bassai Dai?",
+          "options": ["Major", "Minor", "First"],
+          "answer": 0,
+          "explanation": "'Dai' means 'major' or 'greater'."
+        },
+        {
+          "question": "What is the purpose of brown belt training?",
+          "options": ["Prepare for black belt", "Learn basics", "Practice katas only"],
+          "answer": 0,
+          "explanation": "Brown belt prepares you for black belt."
+        },
+        {
+          "question": "How many kiai points are in Bassai Dai?",
+          "options": ["2", "1", "3"],
+          "answer": 0,
+          "explanation": "Bassai Dai has 2 kiai points."
+        },
+        {
+          "question": "What does 'Kyū' mean?",
+          "options": ["Grade below black", "Black belt rank", "Teacher"],
+          "answer": 0,
+          "explanation": "'Kyū' refers to ranks below black belt."
+        },
+        {
+          "question": "What technique is this?",
+          "image": "images/brown/technique1.jpg",
+          "options": ["Empi-uchi", "Nukite", "Yoko-geri"],
+          "answer": 0,
+          "explanation": "This is Empi-uchi, the elbow strike."
+        }
+      ]
+    },
+    "Brown Special": {
       "quizzes": [
         {
           "question": "What is a common kata for brown belt?",

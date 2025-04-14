@@ -58,7 +58,6 @@ function showOnly(section) {
     document.getElementById('syllabus-section').classList.add('hidden');
     document.getElementById('lessons-section').classList.add('hidden');
     section.classList.remove('hidden');
-    progressSection.classList.remove("hidden"); // Always show progress
 }
 
 // Select a belt and show options
@@ -204,6 +203,10 @@ function showSyllabus() {
         .then(response => response.json())
         .then(data => {
             const syllabus = data[belt].syllabus;
+            const kata = data[belt].kata;
+            const kumite = data[belt].kumite;
+
+            // Populate syllabus list
             const syllabusList = document.getElementById('syllabus-list');
             syllabusList.innerHTML = '';
             syllabus.forEach(item => {
@@ -211,6 +214,25 @@ function showSyllabus() {
                 li.textContent = item;
                 syllabusList.appendChild(li);
             });
+
+            // Populate KATA list
+            const kataList = document.getElementById('kata-list');
+            kataList.innerHTML = '';
+            kata.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                kataList.appendChild(li);
+            });
+
+            // Populate Kumite list
+            const kumiteList = document.getElementById('kumite-list');
+            kumiteList.innerHTML = '';
+            kumite.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                kumiteList.appendChild(li);
+            });
+
             showOnly(syllabusSection);
         })
         .catch(error => console.error('Error loading syllabus:', error));
